@@ -1,0 +1,296 @@
+@keyframes panning-anim {
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+
+.title-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  --card-height: 75vmin;
+}
+.title-container > .line{
+  height: calc(var(--card-height) + 3vmin);
+  width: .2vmin;
+  background-color: white;
+
+}
+
+
+.card{
+  position: relative;
+  height: var(--card-height);
+  flex-basis: 47%;
+  box-sizing: border-box;
+  border: 2px white solid;
+}
+
+.card > .card-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding:2.25vmin 3.25vmin;
+}
+
+.card-container > .title{
+  font-size: 3.75vmin;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+}
+
+.left > .card-container > .story-container{
+  width: 100%;
+  height: 95%;
+  box-sizing: border-box;
+  padding:1.5vmin 0;
+  overflow: auto;
+}
+
+.story-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:flex-start;
+
+  gap:1.5vmin;
+}
+
+.story{
+  width: 12.8vmax;
+  height: auto;
+  aspect-ratio: 1;
+  opacity: .6;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid white;
+  box-sizing: border-box;
+  transition: var(--basic-transiton) all;
+}
+
+.story:hover, .forcehover{
+  opacity: .98;
+}
+
+.forcehover ~ .story:hover{
+  opacity: .6;
+}
+
+.story:hover:has(~ .forcehover){
+  opacity: .6;
+}
+
+
+.right > .card-container > .image{
+  width:100%;
+  height: 30vmin;
+  margin-top:1.25vmin;
+  background: url('../../../public/images/story-banner/playarea.png') center/cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  animation: panning-anim 85s infinite ease-in;
+}
+
+.right > .card-container > .expand{
+  position: absolute;
+  right:3.25vmin;
+  top:2.5vmin;  
+}
+
+.expand > img{
+  width: 5vmin;
+  transition: var(--basic-transiton) all;
+}
+
+.expand > img:hover{
+  transform: scale(1.15);
+}
+
+.right > .card-container > .text {
+  height:32vmin;
+  overflow: hidden;
+  margin-top: 3.7vmin;
+}
+
+.right > .card-container > .text > span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  font-size: 1.5vmax;
+}
+
+.opened-story{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #101010FA;
+  border: .1vmin solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:1.5vmin 2vmin;
+}
+
+.opened-story > .line{
+  height: calc(var(--card-height) - 2vmin);
+  width: .2vmin;
+  background-color: white;
+}
+
+
+.opened-story > .card{
+  border: none;
+}
+
+.opened-story > .collapse{
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  right:3vmin;
+  top:1vmin
+}
+
+.collapse > img{
+  width: 5vmin;
+  transition: var(--basic-transiton) all;
+}
+
+.collapse > img:hover{
+  transform: scale(1.15);
+}
+
+.opened-story .card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opened-story .text-container{
+  width:90%;
+  height:90%;
+  padding-right: 4vmin;
+  padding-left: 1vmin;
+  text-indent: 5vmin;
+  background-color: #1E1E1E90;
+  overflow: auto;
+}
+
+.opened-story .text-container > span{
+  font-size: 3vmin;
+  line-height: 170%;
+  color: white;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  white-space: pre-wrap;
+}
+
+.opened-story > .left > .left-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding:0 2.7vmin;
+}
+
+
+.opened-story > .left > .left-container > span{
+  font-size: 5.35vmin;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1vmin;
+}
+
+.left-container > .banner-container{
+  position: relative;
+  width: 100%;
+  height:22vmax;
+  aspect-ratio: 709/407;
+  box-sizing: border-box;
+}
+
+.banner-container > .banner{
+  width: 100%;
+  height: 96.5%;
+  background: url('../../../public/images/story-banner/playarea.png') center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+}
+
+.banner-container > .date{
+  width: 100%;
+  height:3vmin;
+  /* margin-top: 1.1vmin; */
+  color: white;
+  text-align: right;
+  font-size: 2.8vmin;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.author-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5vmin;
+}
+
+.author-container > .author-icon{
+  width:20vmin;
+  height: auto;
+  aspect-ratio: 1;
+  background: url('../../../public/images/author/drake.png') center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+}
+
+.author-container {
+  margin-top: 3vmin;
+}
+
+
+.author-container > .author-details-container > h2{
+  margin: 0;
+  font-size: 5.9vmin;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+}
+
+.author-container > .author-details-container > span{
+  display: inline-block;
+  margin: 0;
+  width: 44vmin;
+  font-size: 3vmin;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+}

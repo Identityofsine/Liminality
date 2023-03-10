@@ -1,0 +1,39 @@
+.header{
+  position: absolute;
+  top:0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > img{
+  width: 4vmin;
+  position: absolute;
+  cursor: pointer;
+  left:5vmin;
+  top:3vmin;
+  opacity: .7;
+  transition: var(--basic-transiton) all;
+}
+
+.header > img:hover{
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.header > span{
+  display: inline-block;
+  font-family: 'Tilt Prism', cursive;
+  font-size: 10vmin;
+  color:white;
+}
+
+.header > .line{
+  width:97%;
+  height: .4vmin;
+  margin-top: 1vmin;
+  background-color: #fe6d73;
+  border-radius: 12px;
+}
