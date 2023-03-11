@@ -2,6 +2,7 @@
   --bg-color:#101010;
   --scrollbar-width:.5vmin;
   --basic-transiton:250ms;
+  cursor: none;
 }
 
 body {
@@ -24,4 +25,35 @@ body {
   background-color: #EAE9CC;
   width:var(--scrollbar-width);
   border-radius: 25px;
+}
+
+#trailer{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 4vmin;
+  height: 4vmin;
+  background-color: #fef3eff9;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#trailer > i {
+  margin:0 auto;
+  font-size: 2vmin;
+  transition: 125ms all;
+  color:black;
+}
+
+#trailer[data-status='off'] > i{
+  opacity: 0;
+}
+
+#trailer[data-status='on'] {
+  background-color: #fef3eff0;
+
 }
