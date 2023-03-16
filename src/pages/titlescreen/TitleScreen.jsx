@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./TitleScreen.css"
+import "./TitleScreen.scss"
 import sleep from '../../util/sleep';
 import {authors, stories} from '../../temp/stories';
 

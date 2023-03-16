@@ -1,3 +1,6 @@
+@import './breakpoints/breakpoints.scss';
+
+
 :root{
   --bg-color:#101010;
   --scrollbar-width:.5vmin;
@@ -17,6 +20,12 @@ body {
   padding-left:2%;
   padding-right: 2%;
   overflow-x: hidden;
+  @include media('<=tablet'){
+    overflow-x:scroll;
+    padding-top: 0vmin;
+    margin-top: 16vmin;
+    height:90vh;
+  }
 }
 
 ::-webkit-scrollbar{
@@ -42,6 +51,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media('<=tablet'){
+    display: none;
+  }
 }
 
 #trailer > i {

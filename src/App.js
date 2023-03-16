@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Header from './pages/components/header/Header';
 import Loading from './pages/loading/Loading';
 import TitleScreen from './pages/titlescreen/TitleScreen';
