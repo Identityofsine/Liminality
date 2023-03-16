@@ -25,7 +25,9 @@ const Trailer = () => {
                 break;
               case 'expand':
                 iconref.current.className = 'fa-solid fa-expand'
-
+                break;
+              case 'close':
+                iconref.current.className = 'fa-solid fa-compress'
                 break;
               default:
               break;

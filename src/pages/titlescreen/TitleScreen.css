@@ -64,7 +64,7 @@
   flex-wrap: wrap;
   align-items:flex-start;
 
-  gap:1.5vmin;
+  gap:1.3vmin;
 }
 
 .story{
@@ -144,8 +144,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
   padding:1.5vmin 2vmin;
+  box-sizing: border-box;
+  right:0;
 }
 
 .opened-story > .line{
@@ -181,12 +182,54 @@
   justify-content: center;
 }
 
+
+@keyframes close-story {
+  0%{
+    width: 100%;
+    height: 100%;
+  }
+  100%{
+    height:var(--card-height);
+    width: 47%;
+    opacity: 0;
+  }
+}
+
+@keyframes open-story {
+  0%{
+    height:var(--card-height);
+    width: 47%;
+    opacity: 0;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.opened-story[data-status='opening']{
+  animation: open-story 450ms linear;
+
+}
+
+.opened-story[data-status='closing']{
+  animation: close-story 450ms linear;
+  height:var(--card-height);
+  width:47%;
+  transition: .2s all;
+}
+
+.opened-story[data-status='closing'] > *{
+  opacity: 0;
+  display: none;
+}
+
 .opened-story .text-container{
   width:90%;
   height:90%;
   padding-right: 4vmin;
   padding-left: 1vmin;
-  text-indent: 5vmin;
+  text-indent: 2vmin;
   background-color: #1E1E1E90;
   overflow: auto;
 }
@@ -223,7 +266,6 @@
 
 .left-container > .banner-container{
   position: relative;
-  width: 100%;
   height:22vmax;
   aspect-ratio: 709/407;
   box-sizing: border-box;
@@ -231,7 +273,7 @@
 
 .banner-container > .banner{
   width: 100%;
-  height: 96.5%;
+  height: 100%;
   background: url('../../../public/images/story-banner/playarea.png') center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -241,7 +283,7 @@
 .banner-container > .date{
   width: 100%;
   height:3vmin;
-  /* margin-top: 1.1vmin; */
+  margin-top: .5vmin;
   color: white;
   text-align: right;
   font-size: 2.8vmin;
@@ -270,6 +312,7 @@
 
 .author-container {
   margin-top: 3vmin;
+  padding-bottom: 2vmin;
 }
 
 
