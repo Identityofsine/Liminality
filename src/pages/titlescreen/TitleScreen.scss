@@ -21,7 +21,7 @@
   --card-height: 75vmin;
   @include media('<=tablet'){
     flex-direction: column-reverse;
- 
+    gap:2vmin;
   }
   @include media('<=phone'){
     height: 100vh;
@@ -38,6 +38,7 @@
     width: 100%;
     height:.2vmin;
     margin: 3vmin 0;
+    display:none;
   }
 
 }
@@ -51,7 +52,10 @@
   border: 2px white solid;
 
   @include media('<=tablet'){
-    height: calc(var(--card-height) + 5vmax);
+    height: calc(var(--card-height) - 3vmax);
+    aspect-ratio: 371/353;
+    border: 3.5px white solid;
+
     flex: 1;
   }
   @include media('<=phone'){
@@ -71,9 +75,9 @@
 
 .card-container > .title{
   @include media('<=tablet') {
-    font-size: 5vmin;
+    font-size: 8vmin;
     font-weight: 400;
-    padding-bottom: 1vmin;
+    // padding-bottom: 1vmin;
   }
   font-size: 3.75vmin;
   font-family: 'Roboto';
@@ -89,7 +93,8 @@
   padding:1.5vmin 0;
   @include media('<=tablet') {
     flex:1;
-    height:95%;
+    height:28.5vmax;
+    margin-top: 5vmin;
   }
   overflow: auto;
 }
@@ -100,10 +105,13 @@
   flex-wrap: wrap;
   align-items:flex-start;
   gap:1.3vmin;
+
   @include media('<=tablet') {
     align-items: center;
-    justify-content: space-between;
-    gap:2vmin;
+    justify-content: center;
+    gap:2.2vmax;
+    overflow: auto;
+    width: 90%;
   }
 }
 
@@ -119,12 +127,14 @@
   box-sizing: border-box;
   transition: var(--basic-transiton) all;
   @include media('<=tablet') {
-    width:13vmax;
+    width:16vmax;
+    opacity: 1;
+    
   }
   @include media('<=phone') {
     width:10vmax;
   }
-}
+} 
 
 .story:hover, .forcehover{
   opacity: .98;
@@ -151,7 +161,7 @@
   background-position: 0% 0%;
   animation: panning-anim 85s infinite ease-in;
   @include media('<=tablet'){
-    height: 50vmin;
+ 
   }
 }
 
@@ -175,7 +185,8 @@
   overflow: hidden;
   margin-top: 3.7vmin;
   @include media('<=tablet'){
-    height:18vmin;
+    height:38vmin;
+    overflow: auto;
   }
 
 }

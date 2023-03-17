@@ -1,3 +1,6 @@
+@import '../../../breakpoints/breakpoints.scss';
+
+
 .header{
   position: absolute;
   top:0;
@@ -6,6 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-top: 4vmin;
+
 }
 
 .header > img{
@@ -21,6 +27,7 @@
 .header > img:hover{
   transform: scale(1.15);
   opacity: 1;
+
 }
 
 .header > span{
@@ -28,6 +35,9 @@
   font-family: 'Tilt Prism', cursive;
   font-size: 10vmin;
   color:white;
+  @include media('<=tablet') {
+    font-size: 15.8vmin;
+  }
 }
 
 .header > .line{
@@ -36,4 +46,7 @@
   margin-top: 1vmin;
   background-color: #fe6d73;
   border-radius: 12px;
+  @include media('<=tablet'){
+    height: 1.2vmin;
+  }
 }

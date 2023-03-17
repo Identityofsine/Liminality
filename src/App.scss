@@ -23,18 +23,27 @@ body {
   @include media('<=tablet'){
     overflow-x:scroll;
     padding-top: 0vmin;
-    margin-top: 16vmin;
+    margin-top: 30vmin;
     height:90vh;
+    
   }
 }
 
 ::-webkit-scrollbar{
   width:var(--scrollbar-width);
+  @include media('<=tablet'){
+    width:calc(var(--scrollbar-width) + .4vmax);
+  
+  }
 }
 
 ::-webkit-scrollbar-thumb{
   background-color: #EAE9CC;
   width:var(--scrollbar-width);
+  @include media('<=tablet'){
+    width:calc(var(--scrollbar-width) + 2vmax);
+  
+  }
   border-radius: 25px;
 }
 
