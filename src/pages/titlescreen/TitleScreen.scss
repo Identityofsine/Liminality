@@ -24,10 +24,13 @@
     gap:2vmin;
     height: 100vh;
   }
-  @include media('<=phone'){
-    height: 100vh;
- 
+  @include media('<=laptop'){
+    flex-direction: column-reverse;
+    gap:2vmin;
+    overflow: auto;
+    height: calc(100vh - 18vmin);
   }
+
 }
 .title-container > .line{
   
@@ -35,7 +38,7 @@
   width: .2vmin;
   background-color: white;
   
-  @include media('<=tablet'){
+  @include media('<=laptop'){
     width: 100%;
     height:.2vmin;
     margin: 3vmin 0;
@@ -135,6 +138,9 @@
   @include media('<=phone') {
     width:10vmax;
   }
+  @include media('<=laptop'){
+    width:30vmin;
+  }
 } 
 
 .story:hover, .forcehover{
@@ -227,11 +233,19 @@
   padding:1.5vmin 2vmin;
   box-sizing: border-box;
   right:0;
+  @include media('<=tablet'){
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .opened-story > .line{
   height: calc(var(--card-height) - 2vmin);
   width: .2vmin;
+  @include media('<=tablet'){
+    width:100%;
+    height: .2vmin;
+  }
   background-color: white;
 }
 
@@ -312,7 +326,9 @@
   text-indent: 2vmin;
   background-color: #1E1E1E90;
   overflow: auto;
-  @include media('<=phone'){
+  @include media('<=tablet'){
+    border:2px solid #ffffffa0;
+    text-indent: 6vmin;
   }
 }
 
@@ -324,6 +340,15 @@
   font-style: normal;
   font-weight: 400;
   white-space: pre-wrap;
+  @include media('<=tablet'){
+    font-size:5vmin;
+  }
+}
+
+.opened-story > .left{
+  @include media('<=desktop'){
+    
+  }
 }
 
 .opened-story > .left > .left-container{
@@ -334,6 +359,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding:0 2.7vmin;
+  @include media('<=tablet'){
+
+  }
 }
 
 
@@ -344,6 +372,9 @@
   font-weight: 500;
   color: white;
   margin-bottom: 1vmin;
+  @include media('<=tablet'){
+    font-size:7vmax;
+  }
 }
 
 .left-container > .banner-container{
@@ -351,8 +382,9 @@
   height:22vmax;
   aspect-ratio: 709/407;
   box-sizing: border-box;
-  @include media('<=phone'){
-    height: 40vmax;
+  @include media('<=tablet'){
+    height: 20vmax;
+    width: 100%;
   }
 }
 
@@ -375,6 +407,9 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
+  @include media('<=tablet'){
+   font-size:3.5vmin; 
+  }
 }
 
 .author-container {
@@ -383,6 +418,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2.5vmin;
+  @include media('<=tablet'){
+    padding-top:5vmin;
+  }
 }
 
 .author-container > .author-icon{
@@ -393,6 +431,12 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
+  @include media('<=tablet'){
+    width: 25vmin;
+  }
+  @include media('<=laptop'){
+    width:17vmin;
+  }
 }
 
 .author-container {
@@ -408,6 +452,13 @@
   font-style: normal;
   font-weight: 600;
   color: white;
+  @include media('<=tablet'){
+    font-size: 7vmin;
+  }
+  @include media('<=laptop'){
+    font-size:5vmin;
+  }
+  
 }
 
 .author-container > .author-details-container > span{
@@ -419,4 +470,13 @@
   font-style: normal;
   font-weight: 200;
   color: white;
+  @include media('<=tablet'){
+    font-size:4.5vmin;
+    font-weight: 400;
+    width:60vmin;
+  }
+  @include media('<=laptop'){
+    width:22vmin;
+    font-size: 2.5vmin;
+  }
 }

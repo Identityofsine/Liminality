@@ -25,7 +25,10 @@ body {
     padding-top: 0vmin;
     margin-top: 30vmin;
     // height:90vh;
-    
+  }
+  @include media('<=laptop'){
+    // padding-bottom:30vmin;
+    height: 100vh;
   }
 }
 
