@@ -10,13 +10,14 @@
   justify-content: center;
   align-items: center;
   background-color: #101010;
+  z-index: 10;
+
   @include media('<=tablet') {
     padding-top: 5vmin;
     padding-bottom: 2.5vmin;
     z-index: 10;
   }
   @include media('<=laptop'){
-    z-index: 10;
   }
 }
 

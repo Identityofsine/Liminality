@@ -76,6 +76,7 @@ function TitleScreen() {
     }
     setClicked(true); 
     setStory(e);
+    window.location.href = "#top"
   }
 
   return (

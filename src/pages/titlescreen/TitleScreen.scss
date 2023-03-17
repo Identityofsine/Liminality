@@ -19,16 +19,16 @@
   align-items: flex-start;
   justify-content: space-between;
   --card-height: 75vmin;
-  @include media('<=tablet'){
-    flex-direction: column-reverse;
-    gap:2vmin;
-    height: 100vh;
-  }
   @include media('<=laptop'){
     flex-direction: column-reverse;
     gap:2vmin;
     overflow: auto;
-    height: calc(100vh - 18vmin);
+    height: calc(100vh - 24vmin);
+  }
+  @include media('<=tablet'){
+    flex-direction: column-reverse;
+    gap:2vmin;
+    height: calc(100vh - 10vmin);
   }
 
 }
@@ -110,6 +110,10 @@
   align-items:flex-start;
   gap:1.3vmin;
 
+  @include media('<=laptop') {
+    justify-content: center;
+  }
+
   @include media('<=tablet') {
     align-items: center;
     justify-content: center;
@@ -130,6 +134,9 @@
   border: 2px solid white;
   box-sizing: border-box;
   transition: var(--basic-transiton) all;
+  @include media('<=laptop'){
+    width:28vmin;
+  }
   @include media('<=tablet') {
     width:16.5vmax;
     opacity: 1;
@@ -137,9 +144,6 @@
   }
   @include media('<=phone') {
     width:10vmax;
-  }
-  @include media('<=laptop'){
-    width:30vmin;
   }
 } 
 
@@ -210,6 +214,10 @@
   font-weight: 300;
   color: white;
   font-size: 1.5vmax;
+  @include media('<=laptop'){
+    font-size:3vmin;
+    text-indent: 1vmin;
+  }
   @include media('<=tablet'){
     font-size: 2.5vmax;
   }
@@ -233,6 +241,13 @@
   padding:1.5vmin 2vmin;
   box-sizing: border-box;
   right:0;
+  @include media('<=laptop'){
+    // bottom:100%;
+    height: 200%;
+    gap:2vmin;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   @include media('<=tablet'){
     flex-direction: column;
     justify-content: flex-start;
@@ -242,6 +257,10 @@
 .opened-story > .line{
   height: calc(var(--card-height) - 2vmin);
   width: .2vmin;
+  @include media('<=laptop'){
+    width:100%;
+    height: .2vmin;
+  }
   @include media('<=tablet'){
     width:100%;
     height: .2vmin;
@@ -258,12 +277,20 @@
   position: absolute;
   z-index: 2;
   right:3vmin;
-  top:1vmin
+  top:1vmin;
+  @include media('<=laptop'){
+    top:2.7vmin;  
+  }
+
+
 }
 
 .collapse > img{
   width: 5vmin;
   transition: var(--basic-transiton) all;
+  @include media('<=laptop'){
+    width: 7.5vmin;
+  }
 }
 
 .collapse > img:hover{
@@ -326,6 +353,7 @@
   text-indent: 2vmin;
   background-color: #1E1E1E90;
   overflow: auto;
+
   @include media('<=tablet'){
     border:2px solid #ffffffa0;
     text-indent: 6vmin;
@@ -340,14 +368,21 @@
   font-style: normal;
   font-weight: 400;
   white-space: pre-wrap;
+  @include media('<=laptop'){
+    font-size: 4vmin;
+  }
   @include media('<=tablet'){
     font-size:5vmin;
   }
 }
 
 .opened-story > .left{
-  @include media('<=desktop'){
-    
+
+  position: relative;
+  width: 100%;
+  @include media('<=laptop'){
+    height: fit-content;
+    flex:0;
   }
 }
 
@@ -372,6 +407,9 @@
   font-weight: 500;
   color: white;
   margin-bottom: 1vmin;
+  @include media('<=laptop'){
+    font-size: 6vmax;
+  }
   @include media('<=tablet'){
     font-size:7vmax;
   }
@@ -379,7 +417,8 @@
 
 .left-container > .banner-container{
   position: relative;
-  height:22vmax;
+  height: auto;
+  width: 100%;
   aspect-ratio: 709/407;
   box-sizing: border-box;
   @include media('<=tablet'){

@@ -1,6 +1,8 @@
 @import './breakpoints/breakpoints.scss';
 
-
+.root{
+  overflow: hidden;
+}
 :root{
   --bg-color:#101010;
   --scrollbar-width:.5vmin;
@@ -13,6 +15,8 @@ body {
   padding:0;
   margin:0;
   overflow-y: hidden;
+  overflow-x: hidden;
+
 }
 
 .wrapper{
@@ -20,15 +24,17 @@ body {
   padding-left:2%;
   padding-right: 2%;
   overflow-x: hidden;
-  @include media('<=tablet'){
-    overflow-x:scroll;
-    padding-top: 0vmin;
-    margin-top: 30vmin;
-    // height:90vh;
-  }
   @include media('<=laptop'){
     // padding-bottom:30vmin;
-    height: 100vh;
+    height: calc(100vh );
+  }
+  @include media('<=tablet'){
+    // overflow-x:scroll;
+    padding-top: 0vmin;
+    margin-top: 30vmin;
+    height: calc(100vh - 50vmin);
+
+    // height:90vh;
   }
 }
 
