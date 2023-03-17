@@ -22,6 +22,7 @@
   @include media('<=tablet'){
     flex-direction: column-reverse;
     gap:2vmin;
+    height: 100vh;
   }
   @include media('<=phone'){
     height: 100vh;
@@ -52,10 +53,10 @@
   border: 2px white solid;
 
   @include media('<=tablet'){
+    width: 100%;
     height: calc(var(--card-height) - 3vmax);
     aspect-ratio: 371/353;
     border: 3.5px white solid;
-
     flex: 1;
   }
   @include media('<=phone'){
@@ -93,7 +94,7 @@
   padding:1.5vmin 0;
   @include media('<=tablet') {
     flex:1;
-    height:28.5vmax;
+    height:36vmax;
     margin-top: 5vmin;
   }
   overflow: auto;
@@ -127,7 +128,7 @@
   box-sizing: border-box;
   transition: var(--basic-transiton) all;
   @include media('<=tablet') {
-    width:16vmax;
+    width:16.5vmax;
     opacity: 1;
     
   }
@@ -169,11 +170,17 @@
   position: absolute;
   right:3.25vmin;
   top:2.5vmin;  
+  @include media('<=tablet'){
+    top:3.75vmin;  
+  }
 }
 
 .expand > img{
   width: 5vmin;
   transition: var(--basic-transiton) all;
+  @include media('<=tablet'){
+    width: 10.25vmin;
+  }
 }
 
 .expand > img:hover{
