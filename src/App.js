@@ -3,12 +3,13 @@ import './App.scss';
 import Header from './pages/components/header/Header';
 import Loading from './pages/loading/Loading';
 import TitleScreen from './pages/titlescreen/TitleScreen';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import sleep from './util/sleep';
 
 const Trailer = () => {
   const iconref = useRef();
   useEffect(() => {
-
+    
     window.addEventListener("onstoryclick", (e) => {
       if(e.detail.lock){
         iconref.current.className = 'fa-solid fa-unlock'
@@ -65,13 +66,16 @@ const Trailer = () => {
 
 
 function App() {
+
+  const [loaded, setLoaded] = useState(false);
+
   return (
-    // <Loading/>
     <>
       <Header/>
       <Trailer/>
       <div className='wrapper'>
-        <TitleScreen/>
+        {!loaded && <Loading/>}
+        <TitleScreen setLoaded={setLoaded}/>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./TitleScreen.scss"
 import sleep from '../../util/sleep';
 import {authors, stories} from '../../temp/stories';
@@ -8,7 +8,7 @@ import {authors, stories} from '../../temp/stories';
 
 
 
-function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', content:''}, condense = () => {}, state = 'closing'}) {
+function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', content:[{content:'',authorID:0}]}, condense = () => {}, state = 'closing'}) {
   return(
     <div className='opened-story' data-status={state}>
       <div className='inter collapse' data-type={'close'} onClick={condense}>
@@ -37,7 +37,7 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
       <div className='right card'>
         <div className='text-container'>
           <span>
-          {story.content}
+          {story.content[0].content}
           </span>
         </div>
       </div>
@@ -46,12 +46,24 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
 }
 
 
-function TitleScreen() {
+function TitleScreen({setLoaded = (e) => {}}) {
 
   const [currentStory, setStory] = useState(stories[0]);
   const [clicked, setClicked] = useState(false);
   const [storyExpanded, setExpand] = useState({expanded:false, story:stories[0]})
   const [state, setState] = useState('none');
+  const [currentImageLoaded, sil] = useState(0);
+
+
+  useEffect(() => {
+    if(currentImageLoaded >= stories.length)
+      setLoaded(true);
+      
+  }, [currentImageLoaded])
+
+  const incrementImageLoaded = () => {
+    sil(currentImageLoaded + 1);
+  }
 
   const handleExpand = async () => {
     var temp = {...storyExpanded};
@@ -89,7 +101,22 @@ function TitleScreen() {
             <span>Explore:</span>
           </div>
           <div className={`story-container`}>
-            {stories.map((d,i) => (<div data-type='story' className={`inter story ${clicked && currentStory === d ? 'forcehover' : ''}`} onClick={() => {handleStoryClick(d)}} onMouseEnter={() => {if(clicked) return; setStory(d)}} style={{backgroundImage:`url("${d.image}")`}}/>))}
+            {stories.map((d,i) => (<div data-type='story' className={`inter story ${clicked && currentStory === d ? 'forcehover' : ''}`} onClick={() => {handleStoryClick(d)}} onMouseEnter={() => {if(clicked) return; setStory(d)}} style={{backgroundImage:(() => {
+
+              var image = new Image();
+              image.onload = () => {
+                const wait = async () => {
+                  incrementImageLoaded();
+                }
+                wait();
+              }
+              
+              image.src = d.image;
+              if(currentImageLoaded >= stories.length) {
+                image.onload = null;
+              }
+              return `url('${d.image}')`
+            })()}}/>))}
             
           </div>
         </div>
@@ -106,7 +133,7 @@ function TitleScreen() {
           <div className='image' style={{backgroundImage:`url("${currentStory.imagebanner}")`}}></div>
           <div className='text'>
             <span>
-              {currentStory.content}
+              {currentStory.abstract}
             </span>
           </div>
         </div>  

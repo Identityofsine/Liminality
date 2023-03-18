@@ -1,3 +1,5 @@
+@import '../../breakpoints/breakpoints.scss';
+
 @keyframes images-loading {
   0%{
     transform: scale(1);
@@ -21,18 +23,26 @@
 }
 
 .loading{
+  position: absolute;
+  top:0;
+  left:0;
   width: 100vw;
   height: 100vh;
-  max-width :100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--bg-color);
+  z-index: 20000;
+  cursor: default;
 }
 
 
 .content{
+  position: absolute;
+  top:50%;
+  transform: translateY(-70%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +56,7 @@
 .content > .text > span{
   display: inline-block;
   font-family: 'Tilt Prism', cursive;
-  font-size: 17vmin;
+  font-size: 19.7vmin;
   color:white;
   user-select: none;
 }
@@ -75,6 +85,16 @@
   background-size: cover;
   outline:.25vmin solid white;
   animation: images-loading 5s infinite ease-in-out;
+  @include media('<=laptop')  {
+    background-size: contain;
+    background-position: 50% !important;
+    width:18vmax;
+  }
+  @include media('<=tablet'){
+    background-size: contain;
+    background-position: 50% !important;
+    width:11.5vmax;
+  }
 }
 
 .images > .img-block:nth-child(3){

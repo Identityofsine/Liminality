@@ -55,6 +55,10 @@
   box-sizing: border-box;
   border: 2px white solid;
 
+  @include media('<=laptop'){
+    width: 100%;
+  }
+
   @include media('<=tablet'){
     width: 100%;
     height: calc(var(--card-height) - 3vmax);
@@ -199,7 +203,7 @@
 
 .right > .card-container > .text {
   height:32vmin;
-  overflow: hidden;
+  overflow: auto;
   margin-top: 3.7vmin;
   @include media('<=tablet'){
     height:38vmin;

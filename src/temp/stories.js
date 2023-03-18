@@ -9,7 +9,8 @@ exports.stories = [
    image:'images/story/image.png',
    imagebanner:'images/story-banner/playarea.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Fever',
@@ -17,7 +18,8 @@ exports.stories = [
    image:'images/story/image-2.png',
    imagebanner:'images/story-banner/fever.png',
    date:0,
-   content:`Florida nights are almost never cold. Although one night in my youth the Florida air was cold as New York in the fall. I was perched on my dad’s shoulders, shivering as the cold air condensed my breath in front of me. As we walked, I laid my eyes upon a waterpark after hours. The inflatable tubes were still floating across the “lazy river”. The lazy river had large plastic red-topped mushrooms sitting beside hills as decorations. At day time, they would be relaxing and fun furniture for the ride but at night it casted an eerie sense of not belonging.
+   abstract:`This radiant vista, once teeming with bipedal lifeforms who delighted in using donut-shaped PVC as a source of relaxation, as they floated along the sparkling, crystalline waters. The breeze was soft and warm, reminiscent of a balmy summer's night, the landscape blanketed in verdant blades of grass that flowed like a deep, emerald river. Graceful creatures, known as "Flutterers," moved in an eternal dance, their wings gently fluttering as they emanated a soft, bioluminescent glow.`,
+   content:[{content:`Florida nights are almost never cold. Although one night in my youth the Florida air was cold as New York in the fall. I was perched on my dad’s shoulders, shivering as the cold air condensed my breath in front of me. As we walked, I laid my eyes upon a waterpark after hours. The inflatable tubes were still floating across the “lazy river”. The lazy river had large plastic red-topped mushrooms sitting beside hills as decorations. At day time, they would be relaxing and fun furniture for the ride but at night it casted an eerie sense of not belonging.
 
    Although I felt unnerved by the deserted water park, I said nothing and we silently made our way back to the hotel. After we had reached our room, something didn’t sit well with me. I felt as if that waterpark had a significant meaning to it or something horrifying had happened to make it so empty.
    
@@ -44,7 +46,7 @@ exports.stories = [
    The room was lit up by one warm light bulb. The concrete walls and floor were weathered with wear and tare. In between these small holes there was graffiti and writing throughout the entire room. All in red paint. Some words were screaming while others were calm. I tried to focus on a few markings at once : “Empty”, “Nobody”, “Understand”, “Unaccepting”, “Alone”, “Enjoyless”, “Solitary”, “Force Withdraw”. 
    
    I shortly discovered that there weren't any doors, any hatches, or escapes. It was air-tight like a glass container (but now made out of concrete). I frantically searched, jutting my head in all sorts of directions. The words started to grow and suffocate me and the concrete. The concrete was now covered in one big red mess. Before waking up, I focused on a white blotch on the red wall. It was the sign I saw earlier: “You Are Alone.” 
-   `,
+   `, authorID:0}],
   },
   {
     name:'Lost',
@@ -52,7 +54,8 @@ exports.stories = [
    image:'images/story/image-3.png',
    imagebanner:'images/story-banner/lost.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Slide',
@@ -60,7 +63,8 @@ exports.stories = [
    image:'images/story/image-4.png',
    imagebanner:'images/story-banner/slide.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Oblitus Es',
@@ -68,7 +72,8 @@ exports.stories = [
    image:'images/story/image-1.png',
    imagebanner:'images/story-banner/end.png',
    date:0,
-   content:`The grass was green when the sun was beating down on my jet black hair. I could feel the wood chips from the playground prick the bottom of my heel everytime I walked. There were two playgrounds separated by a mere yard of dirt. One was an old, aged, wooden playground that heavily relied on tires for juvenile entertainment. Next to it was a bright purple plastic playground that stood taller but less featureful. Kids would congregate themselves according to their current playstyle, the rough kids would go to the wooden playground and the relaxed ones would stay at the purple. 
+   abstract:'',
+   content:[{content:`The grass was green when the sun was beating down on my jet black hair. I could feel the wood chips from the playground prick the bottom of my heel everytime I walked. There were two playgrounds separated by a mere yard of dirt. One was an old, aged, wooden playground that heavily relied on tires for juvenile entertainment. Next to it was a bright purple plastic playground that stood taller but less featureful. Kids would congregate themselves according to their current playstyle, the rough kids would go to the wooden playground and the relaxed ones would stay at the purple. 
 
    The black sheet of metal with a hole gridded pattern acted as the floor for the purple playground. It dissipated enough heat in the summer to make it comfortable enough to sit down. In a mix of exhaustion and boredom, I made my way to the purple playground. When I was younger, I was never in a state of search. I wasn’t searching for somebody to talk to or play with, I was endlessly curious and I wanted to see what was waiting for me. When I got up there, two kids were sitting down. One was a girl and the other a boy, me and the boy happened to be a year younger than the girl. She had braces and dirty blond hair. Her clothes looked cheap and her fingernails were long and unpainted. Her young arms had a shadow of hair across them and she seemed masculine in nature. 
    
@@ -89,16 +94,18 @@ exports.stories = [
    Eventually the lunch ladies started to blow the whistle to try to rally us up so we could go back to class. 
    
    Hunt looks towards me, “You know they can’t see us from here.” 
+   
    Elma joins with “Yea, watch they won’t even know we're gone”.
    
    The whistle blows for a second time and then finally all the kids are lined up and they start marching their way into the building. 
+   
    I had never been out of bounds like this before and I felt like a criminal eluding class like this. In my mind, it was too late to run back into the building and there would be no possible excuse for my absence. I decided to stay here with these delinquents as we were now fugitives on the run. 
    
    We had our recess near the end of the day so we’d be the last ones to play on the playground, there wouldn’t be another adult coming out to the playground until it was time to close the gate at sunset. Elma looks at me with razor sharp eyes.
    
    “You see how little we matter to them? Nothing would have changed if we lined up with the rest of them, instead of sitting here we would be sitting in the classroom where the teacher's eyes always glided past us. Never giving us the light of day.”
    
-   “No I don’t think that is, I think my teacher likes me”, I said meekly. 
+   “No no, I think my teacher likes me”, I said meekly. 
    
    “Grow up. Do you really think she likes you? Just think about your entire class, does she like everyone in your class just as much as you? If she doesn’t like one kid as much as the other, what makes a good kid good and a bad one bad to her?”
    
@@ -154,7 +161,7 @@ exports.stories = [
      I headed towards the middle of the building, where the auditorium slept. The auditorium hadn't been updated since the building was constructed in 1932. The paint on the podium was peeling, and the tiled floors were starting to show serious age. It was reeked with wet wood, and it generally gave me more memories of discomfort than anything. Large red curtains covered the windows, and I was in awe as the blankness of the room started to blind me. I left the auditorium; I had only gone there to quench my curiosity, but I certainly regretted it afterwards.
    
      I had finally found the doors that lead to the exit I would normally go out of. It was two large brick colored doors with glass windows on the top and bottom. I walked through those doors with a certain relief that I was no longer where I wasn’t supposed to be. But then at a moment's notice, there was nobody, there was nothing. It was empty, not my parents or any officials. Nothing, there was nowhere for me to go. Of course, I could go home and relinquish my state of being lost but that wasn’t the issue. It is that I am unknowingly lost. I am forgotten.
-   `,
+   `, authorID:0}],
   },
   {
     name:'Purgatory',
@@ -162,7 +169,8 @@ exports.stories = [
    image:'images/story/image-5.png',
    imagebanner:'images/story-banner/purgatory.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Dark',
@@ -170,7 +178,8 @@ exports.stories = [
    image:'images/intro/image-1.png',
    imagebanner:'images/story-banner/dark.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Airport',
@@ -178,7 +187,8 @@ exports.stories = [
    image:'images/intro/image.png',
    imagebanner:'images/story-banner/airport.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Arcade',
@@ -186,7 +196,8 @@ exports.stories = [
    image:'images/intro/image-2.png',
    imagebanner:'images/story-banner/arcade.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Home',
@@ -194,7 +205,8 @@ exports.stories = [
    image:'images/story/image-6.png',
    imagebanner:'images/story-banner/home.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Pulse',
@@ -202,7 +214,7 @@ exports.stories = [
    image:'images/story/image-8.png',
    imagebanner:'images/story-banner/pulse.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
   {
     name:'Play',
@@ -210,7 +222,8 @@ exports.stories = [
    image:'images/story/image-7.png',
    imagebanner:'images/story-banner/play.png',
    date:0,
-   content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`,
+   abstract:'',
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
   },
 ]
 
