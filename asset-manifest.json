@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Liminality/static/css/main.11a5e8be.css",
-    "main.js": "/Liminality/static/js/main.3a36dbf6.js",
-    "static/js/787.c68fd8e0.chunk.js": "/Liminality/static/js/787.c68fd8e0.chunk.js",
-    "static/media/playarea.png": "/Liminality/static/media/playarea.bff5a7c785c9ba5e8d37.png",
-    "static/media/image-2.png": "/Liminality/static/media/image-2.267e2603d59798f84ca7.png",
-    "static/media/image.png": "/Liminality/static/media/image.a6d249173ae88a9bb273.png",
-    "static/media/image-1.png": "/Liminality/static/media/image-1.8406aadc242a0a23fd4f.png",
-    "static/media/drake.png": "/Liminality/static/media/drake.d9ea0dd05d44ca3f812b.png",
-    "static/media/logo.svg": "/Liminality/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Liminality/index.html",
-    "main.11a5e8be.css.map": "/Liminality/static/css/main.11a5e8be.css.map",
-    "main.3a36dbf6.js.map": "/Liminality/static/js/main.3a36dbf6.js.map",
-    "787.c68fd8e0.chunk.js.map": "/Liminality/static/js/787.c68fd8e0.chunk.js.map"
+    "main.css": "/Liminality/Liminality/static/css/main.d616cea7.css",
+    "main.js": "/Liminality/Liminality/static/js/main.3c70ea06.js",
+    "static/js/787.c68fd8e0.chunk.js": "/Liminality/Liminality/static/js/787.c68fd8e0.chunk.js",
+    "static/media/playarea.png": "/Liminality/Liminality/static/media/playarea.bff5a7c785c9ba5e8d37.png",
+    "static/media/image-2.png": "/Liminality/Liminality/static/media/image-2.267e2603d59798f84ca7.png",
+    "static/media/image.png": "/Liminality/Liminality/static/media/image.a6d249173ae88a9bb273.png",
+    "static/media/image-1.png": "/Liminality/Liminality/static/media/image-1.8406aadc242a0a23fd4f.png",
+    "static/media/drake.png": "/Liminality/Liminality/static/media/drake.d9ea0dd05d44ca3f812b.png",
+    "static/media/logo.svg": "/Liminality/Liminality/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Liminality/Liminality/index.html",
+    "main.d616cea7.css.map": "/Liminality/Liminality/static/css/main.d616cea7.css.map",
+    "main.3c70ea06.js.map": "/Liminality/Liminality/static/js/main.3c70ea06.js.map",
+    "787.c68fd8e0.chunk.js.map": "/Liminality/Liminality/static/js/787.c68fd8e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11a5e8be.css",
-    "static/js/main.3a36dbf6.js"
+    "static/css/main.d616cea7.css",
+    "static/js/main.3c70ea06.js"
   ]
 }
