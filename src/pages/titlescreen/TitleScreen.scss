@@ -127,7 +127,7 @@
   width: 12.8vmax;
   height: auto;
   aspect-ratio: 1;
-  opacity: .6;
+  opacity: .3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +139,7 @@
   }
   @include media('<=tablet') {
     width:16.5vmax;
-    opacity: 1;
+    opacity: .6;
     
   }
   @include media('<=phone') {
@@ -356,13 +356,14 @@
   background-color: #1E1E1E90;
   overflow: auto;
 
-  @include media('<=tablet'){
-
+  @include media('<=laptop'){
+    height: 61vmin;
   }
 
   @include media('<=tablet'){
     border:2px solid #ffffffa0;
     text-indent: 6vmin;
+    height: 100%;
   }
 }
 
@@ -400,9 +401,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding:0 2.7vmin;
-  @include media('<=tablet'){
 
-  }
 }
 
 

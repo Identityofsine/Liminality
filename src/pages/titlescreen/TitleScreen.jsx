@@ -12,7 +12,7 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
   return(
     <div className='opened-story' data-status={state}>
       <div className='inter collapse' data-type={'close'} onClick={condense}>
-        <img src='/icons/collapse.svg' alt='close'/>
+        <img src='icons/collapse.svg' alt='close'/>
       </div>
       <div className='left card'>
         <div className='left-container'>
@@ -72,11 +72,12 @@ function TitleScreen() {
   const handleStoryClick = (e) => {
     if(clicked && currentStory === e){
       setClicked(false);
+      window.dispatchEvent(new CustomEvent('onstoryclick', {detail:{lock:false}}));
       return;
     }
     setClicked(true); 
     setStory(e);
-    window.location.href = "#top"
+    window.dispatchEvent(new CustomEvent('onstoryclick', {detail:{lock:true}}));
   }
 
   return (
@@ -97,7 +98,7 @@ function TitleScreen() {
       <div className='card right'>
         <div className='card-container'>
           <div className='inter expand' data-type='expand' onClick={handleExpand}>
-            <img src='/icons/expand.svg' alt='expand'/>
+            <img src='icons/expand.svg' alt='expand'/>
           </div>
           <div className='title'>
             <span>{currentStory.name}</span>

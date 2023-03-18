@@ -8,6 +8,14 @@ import { useEffect, useRef } from 'react';
 const Trailer = () => {
   const iconref = useRef();
   useEffect(() => {
+
+    window.addEventListener("onstoryclick", (e) => {
+      if(e.detail.lock){
+        iconref.current.className = 'fa-solid fa-unlock'
+      } else
+        iconref.current.className = 'fa-solid fa-book'
+    });
+
     onmousemove = e => {
       const logic = (e, boolean, obj) => {
         const element = document.getElementById('trailer');
@@ -17,11 +25,17 @@ const Trailer = () => {
           transform:`translate(${x}px, ${y}px) scale(${boolean ? 2 : 1})`,
         }
         element.animate(keyframes, {duration:100, fill:'forwards'})
+
         if(boolean){
           element.dataset.status='on';
             switch(obj.dataset.type){
               case 'story':
                 iconref.current.className = 'fa-solid fa-book'
+                const classes = obj.className + "";
+                if(classes.split(" ")[2]){
+                  iconref.current.className = 'fa-solid fa-unlock'
+
+                }
                 break;
               case 'expand':
                 iconref.current.className = 'fa-solid fa-expand'
