@@ -1,5 +1,7 @@
+// Importing a SCSS file with breakpoints
 @import '../../breakpoints/breakpoints.scss';
 
+// Defining a keyframe animation
 @keyframes panning-anim {
   0%{
     background-position: 0% 0%;
@@ -12,19 +14,24 @@
   }
 }
 
+// Styling for the container that holds the title and cards
 .title-container{
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  --card-height: 75vmin;
+  --card-height: 75vmin; // A custom CSS variable used to define the height of the cards
+  
+  // Media query for laptop and smaller screens
   @include media('<=laptop'){
     flex-direction: column-reverse;
     gap:2vmin;
     overflow: auto;
     height: calc(100vh - 24vmin);
   }
+  
+  // Media query for tablet and smaller screens
   @include media('<=tablet'){
     flex-direction: column-reverse;
     gap:2vmin;
@@ -32,12 +39,15 @@
   }
 
 }
+
+// Styling for the line that separates the title and cards
 .title-container > .line{
   
   height: calc(var(--card-height) + 3vmin);
   width: .2vmin;
   background-color: white;
   
+  // Media query for laptop and smaller screens
   @include media('<=laptop'){
     width: 100%;
     height:.2vmin;
@@ -47,7 +57,7 @@
 
 }
 
-
+// Styling for the cards
 .card{
   position: relative;
   height: var(--card-height);
@@ -55,10 +65,12 @@
   box-sizing: border-box;
   border: 2px white solid;
 
+  // Media query for laptop and smaller screens
   @include media('<=laptop'){
     width: 100%;
   }
 
+  // Media query for tablet and smaller screens
   @include media('<=tablet'){
     width: 100%;
     height: calc(var(--card-height) - 3vmax);
@@ -66,6 +78,8 @@
     border: 3.5px white solid;
     flex: 1;
   }
+  
+  // Media query for phone and smaller screens
   @include media('<=phone'){
     height: calc(var(--card-height) + 0vmax);
     flex: 1;
@@ -73,6 +87,7 @@
   }
 }
 
+// Styling for the container inside each card
 .card > .card-container{
   position: relative;
   width: 100%;
@@ -81,12 +96,16 @@
   padding:2.25vmin 3.25vmin;
 }
 
+// Styling for the title of each card
 .card-container > .title{
+  // Media query for tablet and smaller screens
   @include media('<=tablet') {
     font-size: 8vmin;
     font-weight: 400;
     // padding-bottom: 1vmin;
   }
+  
+  // Default styling for larger screens
   font-size: 3.75vmin;
   font-family: 'Roboto';
   font-style: normal;
@@ -94,40 +113,47 @@
   color: white;
 }
 
-.left > .card-container > .story-container{
+
+/* Styling for story container */
+.left > .card-container > .story-container {
   width: 100%;
   height: 95%;
   box-sizing: border-box;
-  padding:1.5vmin 0;
+  padding: 1.5vmin 0;
+  
+  /* Styling for screens smaller than or equal to tablet size */
   @include media('<=tablet') {
-    flex:1;
-    height:36vmax;
+    flex: 1;
+    height: 36vmax;
     margin-top: 5vmin;
   }
   overflow: auto;
 }
 
-.story-container{
+/* Styling for individual stories */
+.story-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items:flex-start;
-  gap:1.3vmin;
+  align-items: flex-start;
+  gap: 1.3vmin;
 
+  /* Styling for screens smaller than or equal to laptop size */
   @include media('<=laptop') {
     justify-content: center;
   }
 
+  /* Styling for screens smaller than or equal to tablet size */
   @include media('<=tablet') {
     align-items: center;
     justify-content: center;
-    gap:2.2vmax;
+    gap: 2.2vmax;
     overflow: auto;
     width: 90%;
   }
 }
 
-.story{
+.story {
   width: 12.8vmax;
   height: auto;
   aspect-ratio: 1;
@@ -138,52 +164,64 @@
   border: 2px solid white;
   box-sizing: border-box;
   transition: var(--basic-transiton) all;
+  
+  /* Styling for screens smaller than or equal to laptop size */
   @include media('<=laptop'){
     width:28vmin;
   }
+  
+  /* Styling for screens smaller than or equal to tablet size */
   @include media('<=tablet') {
-    width:16.5vmax;
+    width: 16.5vmax;
     opacity: .6;
     
   }
+  
+  /* Styling for screens smaller than or equal to phone size */
   @include media('<=phone') {
-    width:10vmax;
+    width: 10vmax;
   }
 } 
 
-.story:hover, .forcehover{
+/* Styling for story on hover */
+.story:hover, .forcehover {
   opacity: .98;
 }
 
-.forcehover ~ .story:hover{
+/* Styling for story when a forcehover element is present */
+.forcehover ~ .story:hover {
   opacity: .6;
 }
 
-.story:hover:has(~ .forcehover){
+/* Styling for story on hover when a forcehover element is present */
+.story:hover:has(~ .forcehover) {
   opacity: .6;
 }
 
-
-
-
-.right > .card-container > .image{
-  width:100%;
+/* Styling for image in the right section of the card */
+.right > .card-container > .image {
+  width: 100%;
   height: 30vmin;
-  margin-top:1.25vmin;
+  margin-top: 1.25vmin;
   background: url('../../../public/images/story-banner/playarea.png') center/cover;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
   animation: panning-anim 85s infinite ease-in;
+  
+  /* Styling for screens smaller than or equal to tablet size */
   @include media('<=tablet'){
  
   }
 }
 
-.right > .card-container > .expand{
+/* Styling for expand button in the right section of the card */
+.right > .card-container > .expand {
   position: absolute;
-  right:3.25vmin;
-  top:2.5vmin;  
+  right: 3.25vmin;
+  top: 2.5vmin;  
+  
+  /* Styling for screens smaller than or equal to tablet size */
   @include media('<=tablet'){
     top:3.75vmin;  
   }
