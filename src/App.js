@@ -35,7 +35,6 @@ const Trailer = () => {
                 const classes = obj.className + "";
                 if(classes.split(" ")[2]){
                   iconref.current.className = 'fa-solid fa-unlock'
-
                 }
                 break;
               case 'expand':
@@ -43,6 +42,9 @@ const Trailer = () => {
                 break;
               case 'close':
                 iconref.current.className = 'fa-solid fa-compress'
+                break;
+              case 'swap':
+                iconref.current.className = 'fa-solid fa-rotate'
                 break;
               default:
               break;

@@ -8,7 +8,26 @@ import {authors, stories} from '../../temp/stories';
 
 
 
-function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', content:[{content:'',authorID:0}]}, condense = () => {}, state = 'closing'}) {
+function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', content:[{content:'',authorID:0}]}, condense = () => {}, state = 'closing', author = 0}) {
+
+
+  const [currentAuthor, setCurrentAuthor] = useState(author)
+  const [animate, setAnimate] = useState(true)
+
+  const handleAuthorChange = (id) => {
+    const sleepTime = 245;
+    const mom = async () => {
+      if(story.content.length > 1){
+        setAnimate(true);
+        await sleep(sleepTime)
+        setCurrentAuthor(id);
+        await sleep(sleepTime);
+        setAnimate(false);
+      }
+    }
+    mom();
+  }
+
   return(
     <div className='opened-story' data-status={state}>
       <div className='inter collapse' data-type={'close'} onClick={condense}>
@@ -23,12 +42,23 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
                 <span>03/08/2023</span>
               </div>
           </div>
-          <div className='author-container'>
-            <div className='author-icon' style={{backgroundImage:`url(${authors[story.authorID].image})`}}/>
-            <div className='author-details-container'>
-              <h2>{authors[story.authorID].name}</h2>
-              <span>{authors[story.authorID].bio}</span>
+          <div className={`author-wrapper ${story.content.length > 1 ? 'inter' : ''}`} data-type='swap' onClick={() => handleAuthorChange(currentAuthor === 1 ? 0 : 1)} >
+            <div className='author-container'>
+              <div className='author-icon' style={{backgroundImage:`url(${authors.filter(i => {return i.id === currentAuthor})[0].image})`}}/>
+              <div className='author-details-container'>
+                <h2>{authors.filter(i => {return i.id === currentAuthor})[0].name}</h2>
+                <span>{authors.filter(i => {return i.id === currentAuthor})[0].bio}</span>
+              </div>
             </div>
+            {story.content.length > 1 && 
+              <div className={`author-container ${animate && 'animate'}`} data-status='second' data-author={currentAuthor === 1 ? 0 : 1} >
+                <div className='author-icon' style={{backgroundImage:`url(${authors[currentAuthor === 1 ? 0 : 1].image})`}}/>
+                <div className='author-details-container'>
+                  <h2>{authors[currentAuthor === 1 ? 0 : 1].name}</h2>
+                  {/* <span>{authors[story.authorID].bio}</span> */}
+                </div>
+              </div>
+            }
           </div>
         </div>
       </div>
@@ -37,7 +67,7 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
       <div className='right card'>
         <div className='text-container'>
           <span>
-          {story.content[0].content}
+          {story.content.filter((i) => { return i.authorID === currentAuthor})[0].content}
           </span>
         </div>
       </div>
@@ -94,7 +124,7 @@ function TitleScreen({setLoaded = (e) => {}}) {
 
   return (
     <div className='title-container'>
-      {storyExpanded.expanded && <OpenedStory story={currentStory} condense={handleExpand} state={state} setcondense={setState} />}
+      {storyExpanded.expanded && <OpenedStory story={currentStory} author={currentStory.content[0].authorID} condense={handleExpand} state={state} setcondense={setState} />}
       <div className='card left'>
         <div className='card-container'>
           <div className='title'>

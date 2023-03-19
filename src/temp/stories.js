@@ -10,7 +10,7 @@ exports.stories = [
    imagebanner:'images/story-banner/playarea.png',
    date:0,
    abstract:'',
-   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}],
+   content:[{content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris Maecenas vitae mattis tellus, Ut et massa mi. Aliquam in hendrerit urna Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus Maecenas vitae...`, authorID:0}, {content:`hardcore sex`, authorID:1}],
   },
   {
     name:'Fever',
@@ -46,7 +46,7 @@ exports.stories = [
    The room was lit up by one warm light bulb. The concrete walls and floor were weathered with wear and tare. In between these small holes there was graffiti and writing throughout the entire room. All in red paint. Some words were screaming while others were calm. I tried to focus on a few markings at once : “Empty”, “Nobody”, “Understand”, “Unaccepting”, “Alone”, “Enjoyless”, “Solitary”, “Force Withdraw”. 
    
    I shortly discovered that there weren't any doors, any hatches, or escapes. It was air-tight like a glass container (but now made out of concrete). I frantically searched, jutting my head in all sorts of directions. The words started to grow and suffocate me and the concrete. The concrete was now covered in one big red mess. Before waking up, I focused on a white blotch on the red wall. It was the sign I saw earlier: “You Are Alone.” 
-   `, authorID:0}],
+   `, authorID:1}],
   },
   {
     name:'Lost',
@@ -73,25 +73,33 @@ exports.stories = [
    imagebanner:'images/story-banner/end.png',
    date:0,
    abstract:'',
-   content:[{content:`The grass was green when the sun was beating down on my jet black hair. I could feel the wood chips from the playground prick the bottom of my heel everytime I walked. There were two playgrounds separated by a mere yard of dirt. One was an old, aged, wooden playground that heavily relied on tires for juvenile entertainment. Next to it was a bright purple plastic playground that stood taller but less featureful. Kids would congregate themselves according to their current playstyle, the rough kids would go to the wooden playground and the relaxed ones would stay at the purple. 
+   content:[{content:`The grass was green when the sun was beating down on my jet black hair. I could feel the wood chips from the playground prick the bottom of my heel everytime I walked. There were two playgrounds divided by a couple feet of dirt. One was an old, aged, wooden playground that heavily relied on tires for juvenile entertainment. Next to it was a bright purple plastic palace that stood taller but was bereft of features. Depending on your playstyle, you would strictly stick to one playground. The rougher kids would play at the splinter prone wooden playground and the more calm and less active kids would play -- hangout really -- at the plastic palace. 
 
-   The black sheet of metal with a hole gridded pattern acted as the floor for the purple playground. It dissipated enough heat in the summer to make it comfortable enough to sit down. In a mix of exhaustion and boredom, I made my way to the purple playground. When I was younger, I was never in a state of search. I wasn’t searching for somebody to talk to or play with, I was endlessly curious and I wanted to see what was waiting for me. When I got up there, two kids were sitting down. One was a girl and the other a boy, me and the boy happened to be a year younger than the girl. She had braces and dirty blond hair. Her clothes looked cheap and her fingernails were long and unpainted. Her young arms had a shadow of hair across them and she seemed masculine in nature. 
+   The purple playground was constructed with water bottle plastic, its floor was a thick black sheet metal covered with a hole punched pattern. During the summer, the sun would beat down on the black floor but the holes would allow air to flow and be habitable for sitting. Me and the other kids were galloping across the tires on the wooden playground, many of us would fall deep into the tire made net and end up scathing our knees and inner thighs; but since we were kids we would ignore the pain and continue in our affair of fun. After a few hops with my childhood friends, I exited the fun machine and began to make distance with them. None of them had noticed that I walked away so I felt this was a perfect time to excuse myself. In a mix of exhaustion and boredom, I made my way to the purple playground. 
    
-   They were talking to each other about the girl moving onto middle school in a couple of months. She wasn’t ready for the switch and she seemed stressed. There’s a good chance that I am witnessing the first time this girl has had stress put on her wellbeing. I looked into her pained eyes for a moment and could see the fear she had. Even though I was a year younger, I could not relate to her woes. I mustered up a “Hey!” to them. The girl’s face scrunched as if I were violating her privacy. The boy looked up and nodded his head at me. I wouldn’t say I am friends with the kid, I don’t even know his name; but he's one of those people you frequently see without knowing. At some point you capture a mental image of that person and you start to know them as that. That kid who always wears black or that guy who always wears a hat. 
+   When I was younger, I was never in a state of search. I wouldn’t be looking for somebody to talk to or play with, I was endlessly curious and I wanted to see what was waiting for me. When I got up there, there were two kids sitting down. One was a girl and the other a boy. The boy and I happened to be a year younger than the girl. She had braces and dirty blond hair. Her clothes looked cheap and her fingernails were long and unpainted. Her young arms had a shadow of hair across them and she seemed masculine in nature. 
+   
+   They were talking to each other about the girl moving onto middle school in a couple of months. She wasn’t ready for the switch and she seemed stressed. In retrospect, there was a good chance that I was witnessing the first time this girl had ever felt real stress in her life. In hindsight, that wasn’t true; I wasn’t witnessing anything in that moment at all. I glided between both of their eyes and I mustered up a “Hey!” to them. The girl’s face scrunched as if I were violating her privacy, ruining her intimate moment. The boy looked up and nodded his head at me. I wouldn’t say I am friends with the kid, I don’t even know his name; but he's one of those people you frequently see. You never exchange names but at some point both of you start to associate each other as “that guy”.
    
    “What are you guys talking about?” I said, trying to meddle into their conversation. 
    
-   “Mind your bee’s wax.” the girl said hissingly. I took a step back and darted my eyes down to the hole patterned metal floor.
+   “Mind your bee’s wax.” she said hissingly. I took a step back and my eyes danced between the floor and their faces.
    
     “Relax. She’s going into middle school next year and she's upset.”, the boy confessed, “Don’t take it personal”. 
    
-   “I am not upset! I’m just…” 
+   She says “I am not upset! I’m just…”, while looking down into the right.
    
-   “Well, whatever it is, don’t worry about it.”, he moves over and offers me a seat nodding his head towards his left. I felt naked walking towards the boy. 
+   The boy turns his head away from the girl and onto me, “Well, whatever it is, don’t worry about it.”, he scoots over and offers me a seat, patting his hand softly on the metal floor on his left. 
    
-   Trying to make conversation I asked the boy for his name and he told me it was Hunt. Even now I thought hunt was a very interesting name to have. And I let him know that, he laughed a bit and said his dad liked to hunt. 
+   I felt like Adam after he ate the apple. Something about sitting down next to him felt wrong morally. I sat down softly without trying to upset the floor. My mouth opened with hesitation and I managed to ask the boy for his name.
    
-   Eventually the lunch ladies started to blow the whistle to try to rally us up so we could go back to class. 
+   “It’s hunt, and this is Elma. It’s very nice to meet you.”
+   
+   My tonality resembled a constant question as I replied, “Hunt? I never heard of that name; is there any special meaning to it?”
+   
+   “No, my dad just really likes to hunt.”, He chuckled lightly and his smile faded away as quick as it came.
+   
+   We heard a whistle blow loud and I jerked my neck to see the dozens of kids racing a 100 yards to get back to the class. 
    
    Hunt looks towards me, “You know they can’t see us from here.” 
    
@@ -99,69 +107,90 @@ exports.stories = [
    
    The whistle blows for a second time and then finally all the kids are lined up and they start marching their way into the building. 
    
-   I had never been out of bounds like this before and I felt like a criminal eluding class like this. In my mind, it was too late to run back into the building and there would be no possible excuse for my absence. I decided to stay here with these delinquents as we were now fugitives on the run. 
+   My experience felt surreal as I saw them enter one by one. I felt like a fugitive in the act of his crime. It’s important to know that my class would be the last one to have recess; after a quick 45 minute debrief we would be sent home. 
    
-   We had our recess near the end of the day so we’d be the last ones to play on the playground, there wouldn’t be another adult coming out to the playground until it was time to close the gate at sunset. Elma looks at me with razor sharp eyes.
+   I had a few reasons other than peer pressure to not go back. For one, there would be no excuse for me to return to class after the others, they were all lined up and counted -- they would know I was gone before I had begun my journey back. A red alert would be called and a search party would find me here, relaxing on a playground.
    
-   “You see how little we matter to them? Nothing would have changed if we lined up with the rest of them, instead of sitting here we would be sitting in the classroom where the teacher's eyes always glided past us. Never giving us the light of day.”
+   “You see how little we matter to them? Nothing would have changed if we lined up with the rest of them, instead of sitting here we would be sitting in the classroom where the teacher's eyes always glided past us. Never giving us the light of day.” Elma abruptly said with passion. 
    
-   “No no, I think my teacher likes me”, I said meekly. 
+   “No, they always do a head count, they’d never forget anyone…”, I said with meekness in my voice.
    
-   “Grow up. Do you really think she likes you? Just think about your entire class, does she like everyone in your class just as much as you? If she doesn’t like one kid as much as the other, what makes a good kid good and a bad one bad to her?”
+   “Oh, grow up. There are 32 kids in each class, 32 different lives with 2 parents each. A teacher has to worry about 96 people in total -- give or take some kids have single moms. But regardless, you think that they will go a-wall for one measly kid? ”
    
-   “You are putting way too much on him too fast. You are stepping on wet concrete, you are going to ruin the cure.” said Hunt.
+   Hunt cut her off, “You are putting way too much on him too fast. Step on wet concrete and you ruin the cure.”
    
-   I want to say something but everything I could think of could not match what I just heard. All of the cards I could play were bad and my best move was not to play at all. Her feelings of unjust paired with my feelings of being a fugitive were too much in one moment. 
+   I felt like I should have said something. To put it short, I was speechless. All of the cards that I could play were bad and led to terrible endings. In hindsight, I chose the best choice which was not playing any card at all and staying mute.
    
-   “Remember, she’s still cranky about middle school. Let her blow off steam as much as she can.” Hunt smiles and he asks me, “Don’t you think this is cool?” 
+   “Hey. Remember, she’s still cranky about middle school. Let her blow off all that steam.” Hunt smiles and he asks me, “Don’t you think this is cool?” 
    
-   “What?” I said meekly. 
+   “What?” 
    
-   “This. Have you ever been at recess when your class was inside churning like a gear for a machine?”
+   “This. Where we are now. On this playground while they are inside.”
    
-   “Can’t say I have” 
+   “Can’t say I have, Hunt. Aren’t we going to get in trouble?” 
    
-   “I told you, look no one has came for us, they don’t fucking care.”, Yelled Elma. 
-     At this point of my life, I rarely heard curse words and to hear it from a girl older than me sparked wonder and inspiration. Her nihilistic words started to go in one ear and out the other as she was insistent that the school and its officials lacked any regard for its students. That it was just a machine for them to make money and them to pump out slaves bound by longing for love and acceptance. Hunt seemed to be more relaxed in the events surrounding him. He carried a strong but relaxed posture and breathed in a way that only those sleeping could. 
+   Hunt laughs, “C'mon kid don’t be dumb. If we knew they couldn’t see us we'd have to have done this before without getting caught. And besides, they don’t care.”
    
-     “What Elma's really talking about is our idea that teachers are paid to like us. To ‘love us’. That we are only cared for so their asses are covered if anything happens to us, so in the case that something does they could say we cared for them the best we could. That is not to say that all teachers are like this but they wouldn’t be here without the money.”
+   “I told you, look no one has came for us, they don’t fucking care.”, yelled Elma. 
    
-   “I wouldn’t think like us”, he chuckles, “we are just trying to understand like you are right now”. 
+     Her nihilistic words started to go in one ear and out the other as she was insistent that the school and its officials lacked any regard for its students. That it was just an assembly line for them to make money and them to pump out conditioned slaves forced to work for love. Hunt seemed to be more relaxed about the entire thing. He carried a strong but relaxed posture and breathed in such a calm way that you would have thought he was sleeping.
    
-   I stood up and leaned my upper back against the wall that braced the border between playground and slide. I was still speechless, my face had felt white. Elma had softened her face, she was sitting back with her hands propping her upper-body up and her legs spread across. Hunt was sitting down like I was but instead he was hugging his knee to use as a stilt and he looked like one big lung breathing slowly in and out.
+     “Here’s what Elma's really talking about. We believe that teachers are paid to like us. To ‘love us’. We are only looked after so their asses are covered if anything happens to us. So, in the case that something does happen; we end up drunks, bums, and criminals, they could always say ‘we cared for them the best we could. I never saw this coming, he was such a good kid!’ But don’t get twisted, some teachers work in vain and try to create their own prodiges. Try to create us into what they couldn’t be.”
    
-   30 Minutes Go By and Nothing. No one comes for us and school ends shortly. Before school ends they lock up the gate to the playground, I never knew why they did this but it has something to do with unauthorized adults entering the playground (I’m pretty sure there was a story where a child predator snuck passed the open gate and attempted to lure a kid into grabbing distance.  
+   “I wouldn’t think like us if I was you”, he chuckles, “we are just as clueless as you are”. 
    
-   A man wearing gray jeans and a collared shirt with white underneath came out near the gate and closed it. We notice him but he doesn’t notice us.
+   I sat up and leaned my upper back against the wall that connected the playground and the slide. I was still speechless, my face had felt white. Elma had softened her face, she was sitting with her hands behind her body propping her up. Hunt was sitting down like I was but instead he was hugging his knee to use as a stilt and he looked like one big lung breathing fully in and out.
+   
+   By the time Hunt told me their ideology 30 minutes went by. Nobody came into the playground looking for us. School is about to end in 15 minutes and they haven’t thought to check the playground… Did they know we were here? Did they know we were gone? What Elma said before started to make sense and I understood her frustration. 
+   
+   Despite my naivety at that moment, it clicked that what Elma was saying wasn’t out of spite for the teachers. But that she felt utterly unimportant, meaningless and just another ear to teach. I think she sat out here because she wanted someone to come look for her. To claim that they were worried sick and they are so grateful to have found her. 
+   
+   Finally a man comes out of the doors closest to the gate. The gate was a large fenced structure that would be closed a little bit before school was closed. 
    
    “See, he was looking right at us and just walked away.”, Elma says.
    
-   Hunt turns to his left and asks me if I had ever been lost before. I replied with “sure, a few times in the store”.
+   Hunt turns his head away from Elma and focuses on me. “Have you ever been lost before?”
    
-   “I don’t mean like lost for a few minutes or maybe an hour. I mean lost for days where nobody could find you and people are out looking for you? The feeling of being lost is so free; no restrictions and no worries. The only people who are really trying to find you are your folks, as long as you are lost they will always love you.”
+   “Lost? I’ve been lost in a store and like a mall once.”
    
-   “No I can’t say I have. And I don’t think I want to be lost anyway.” I replied.
    
-   “You don’t understand yet, and that’s fine. To be fair you are lost right now.”
+   “I don’t mean lost like that. I mean lost where you were gone for days. Where nobody had a clue where you were so they called the police. A whole party looking for you and all of them would throw their hats in the air if you were to be discovered again. The feeling of being lost is so free; there’s no restrictions and no worries. You are ultimately free. And as long as you're missing, they will long for you. And if you are never found, those people will love you until they meet the god who lost their son.”
    
-   Elma smirks at me as Hunt takes another deep breath. I see the buses that were lined up for dismal leave with the parents picking up their kids. The fact that I am trapped here after school is starting to set in and this eerie feeling of heat exhaustion is setting in. 
+   I didn’t know how to respond. My mouth was ajar and my breath was quick. 
    
-   “How are we going to get home guys?” I said, urgently. 
+   “You don’t understand yet, and that’s fine. But take in the moment. This moment we are in right now because my friend, you’re technically lost.”
    
-   “No need. Be lost or get Lost.” Hunt says.
+   Elma smirks at me as Hunt takes a deep breath. In the corner of my eye, I see the bright yellow buses that were lined up for dismal -- they get there around the start of recess -- drive off with their lights flashing. The parents walked steadily with their version of an angel next to them. Soon there was nothing and nobody.  
    
-   “Give it 10 minutes love and the entire school will be empty, maybe a few custodians here and there but you have to go inside to get out.”, shockingly coming from Elma. 
+   The fact that I am trapped here after school is starting to set in and this eerie feeling is setting in. I was stuck with two lost causes and no clear way of getting home. I had begun to feel lost.
    
-   “You guys got me into this mess, help me get out!”, and Hunt laughs. He laughs and laughs with increasing intensity. Elma’s face is blank and stoic. He stops his laughter suddenly and gets up. He grabs Elma’s hand, pulls her up and begins to walk down the steps of the purple playground. They go towards the wooden playground out of sight. I don’t follow them, I don’t want anything to do with them.
+   “Guys, how do we get out of here?” I urgently said.
    
-     After they had reached their destination, I picked myself up slowly and began to walk. I had a limp because my leg had been numb from sitting on a vein for too long. I awkwardly climb down the stairs and make it for the gymnasium door. I pulled the door and it gave very little; it wasn’t locked but extremely heavy. I yanked it open and only enough came out to fit my little body through the cracks. The polished waxed gym floors stunk a yellow color and the skylights flooded the room with a warm yellow. The sound of my sneakers squeaking against the floor echoed and each iteration of squeak would bring more unease to my heart.
+   “What’s the rush? School just ended. Nowhere is as important as the spot you are in now.” Hunt says.
    
-     There was nobody. Not a soul in sight. I felt like a stranger in a world I didn’t belong in. I felt like a criminal out of jail but then at that moment something struck my heart harder than fear. I had realized that my parents were supposed to pick me up after school had ended. What did they do when they didn’t find me? Did they go and look for me as If I were lost or did they go home and expect me to show up as If I were not worth the search? I was starting to believe that what Elma was saying before was true. 
+   Elma sits up and looks at me with somber eyes, “Give it 10 minutes love and the entire school will be empty, maybe a few custodians here and there but you should be okay going through the school to get to the north exit.”
    
-     I headed towards the middle of the building, where the auditorium slept. The auditorium hadn't been updated since the building was constructed in 1932. The paint on the podium was peeling, and the tiled floors were starting to show serious age. It was reeked with wet wood, and it generally gave me more memories of discomfort than anything. Large red curtains covered the windows, and I was in awe as the blankness of the room started to blind me. I left the auditorium; I had only gone there to quench my curiosity, but I certainly regretted it afterwards.
+   “I don’t want to go in there alone… Can you guys come with me, please?”
    
-     I had finally found the doors that lead to the exit I would normally go out of. It was two large brick colored doors with glass windows on the top and bottom. I walked through those doors with a certain relief that I was no longer where I wasn’t supposed to be. But then at a moment's notice, there was nobody, there was nothing. It was empty, not my parents or any officials. Nothing, there was nowhere for me to go. Of course, I could go home and relinquish my state of being lost but that wasn’t the issue. It is that I am unknowingly lost. I am forgotten.
-   `, authorID:0}],
+    Hunt laughs. He laughs and laughs with increasing intensity. Elma’s somber remains and she looks down, her eyes start to glisten as if she were about to cry. He suddenly stops his laughter and gets up. He grabs Elma’s hand forcefully and pulls her up. Without saying a word, they begin to walk down the steps of the purple playground -- leaving paradise. Elma turns her head to look at me and her wet eyes glisten and her brown eyes give me a depth of melancholy that can only be described as infinite. They start to walk towards the wooden playground, I hear their feet leave the wood chips that covered the ground of Purple Paradise and into the rocky mess that complimented the wood playground. 
+   
+     After they had walked far enough to where I couldn’t see them, I picked myself up slowly. I didn’t notice until then but my leg was numb and I had to limp down the stairs. Once I stepped on the wood chips, I locked eyes with the gymnasium door and started my pursuit. The door was large and brick colored -- although it was obviously made out of metal. I grabbed the silver handle and I pulled the door. Surprisingly the door was heavy, really heavy. I only managed to yank it open enough to fit my little body through. The polished waxed gym floors stunk a urine yellow and the skylights gave the gym a warm temperature in color. The sound of my sneakers squeaking against the floor echoed and each iteration of squeak would bring more unease to my heart. It didn’t make sense why my sneakers would squeak, I hadn’t stepped in anything wet; there was obviously something wet on the floor.
+   
+     Once I walked into the hallway I saw nobody. Not a soul in sight. 
+   I had a strong sense of unease, I knew, I absolutely knew that I shouldn’t be here. I felt like a prisoner who was roaming his cell as a freeman. Something struck my heart hard, I had realized that my parents were supposed to pick me up after school had ended. My thoughts raced : What did they do when they didn’t find me? Did they go and look for me? Did they just assume I was going to come home eventually? Were they happy I was gone? Relieved? I was starting to understand Elma and Elma more. 
+   
+   I didn’t feel like anything Hunt told me I would feel. I was lost but no one was looking for me. He enjoyed the fame and I hated the obscurity.
+   
+     I headed towards the middle of the building, where the auditorium slept. The auditorium hadn't changed since the building was constructed in 1932. It is entirely original. I had wanted to see what the Auditorium looked like when it was empty. The paint on the podium was peeling, and the tiled floors were starting to show serious age. It reeked with a stench of water damaged wood, and it generally gave me more feelings of discomfort than anything. There were large red curtains covering the windows, very little light bled into the room. And I couldn’t help but relate to the large room. I had left the auditorium and made my way towards the north end of the school.
+   
+     I had finally found the doors that lead to the exit that we would normally go out of. Typically you would either walk to the right and find your bus or you would see your mom or dad waiting for you with a slight smile on their face. The two doors were similar to the gymnasium but instead of being a solid block of metal it had two windows stacked on top of each other. I pushed onto the latch and I exited the school into the free world. I could feel the pressure difference as the wind glided across my face. 
+   
+   But as quickly as I felt the wind an impending doom had set in. There wasn’t anyone waiting for me. Not my parents, not the principal, nobody. I wasn’t lost in the traditional sense of the word. For something to be lost it has to be looked for. 
+   
+   And in that moment I felt like Elma. I understood her pain and her spite towards teachers. It wasn’t about the teachers at all, she was forgotten. A bastard child who designated herself to rest at the playground with some narcissist who takes pleasure in being searched for. Hunt had what Elma wanted. 
+   
+   At once, I aligned my thoughts with Elma and our pain was one and I could even feel her worry about starting middle school -- but it didn’t matter. Nothing mattered in that moment other than the fact that I was forgotten.
+   `, authorID:1}],
   },
   {
     name:'Purgatory',

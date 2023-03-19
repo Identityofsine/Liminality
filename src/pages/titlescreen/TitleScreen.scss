@@ -498,25 +498,67 @@
   }
 }
 
+.author-wrapper {
+  position: relative;
+}
+
+@keyframes author-load {
+  0%{
+    bottom:-14vmin;
+  }
+  50%{
+    z-index: 6;    
+  }
+  100%{
+    bottom: 0;
+    left:0;
+
+  }
+}
+
 .author-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2.5vmin;
+  margin-top: 5vmin;
+  margin-bottom: 6.8vmin;
+  padding:.4vmin;
+  box-sizing: border-box;
+  background-color: #1E1E1E;
+  z-index: 5;
+  
   @include media('<=tablet'){
     padding-top:5vmin;
+  }
+
+  &[data-status="second"]{
+    align-items: flex-end;
+    opacity: .3;
+    position: absolute;
+    bottom:-7vmin;
+    left:3.25vmin;
+    background-color: #1E1E1E;
+    z-index: -1;
+    width: 62.3vmin;
+
+    &.animate{
+      animation: author-load 250ms ease-in ;
+    }
+
   }
 }
 
 .author-container > .author-icon{
-  width:20vmin;
+  width:15vmin;
   height: auto;
   aspect-ratio: 1;
   background: url('../../../public/images/author/drake.png') center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
+  outline: .25vmin solid white;
   @include media('<=tablet'){
     width: 25vmin;
   }
@@ -525,10 +567,7 @@
   }
 }
 
-.author-container {
-  margin-top: 3vmin;
-  padding-bottom: 2vmin;
-}
+
 
 
 .author-container > .author-details-container > h2{
