@@ -260,13 +260,13 @@ exports.authors = [
   {
     id:0,
     name:'IAmDrakey',
-    bio:'i am gay i really like boys, do not contact me unless for sex',
+    bio:'Let Thy Aim',
     image:'images/author/drake.png',
   },
   {
     id:1,
     name:'f/x/',
-    bio:'i love the boys',
+    bio:`I told her it didn't mean anything but that I didn't think so.`,
     image:'images/author/fx.png',
   },
 

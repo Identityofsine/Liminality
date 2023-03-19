@@ -519,12 +519,11 @@
 .author-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: 2.5vmin;
   margin-top: 5vmin;
   margin-bottom: 6.8vmin;
-  padding:.4vmin;
   box-sizing: border-box;
   background-color: #1E1E1E;
   z-index: 5;
@@ -589,12 +588,14 @@
 .author-container > .author-details-container > span{
   display: inline-block;
   margin: 0;
-  width: 44vmin;
+  width: 46vmin;
   font-size: 3vmin;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 200;
   color: white;
+  overflow: hidden;
+  padding:1vmin 0;
   @include media('<=tablet'){
     font-size:4.5vmin;
     font-weight: 400;
