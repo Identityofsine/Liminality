@@ -12,7 +12,7 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
 
 
   const [currentAuthor, setCurrentAuthor] = useState(author)
-  const [animate, setAnimate] = useState(true)
+  const [animate, setAnimate] = useState(false)
 
   const handleAuthorChange = (id) => {
     const sleepTime = 475;
@@ -39,6 +39,10 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
               </div>
           </div>
           <div className={`author-wrapper ${story.content.length > 1 ? 'inter' : ''}`} data-type='swap' onClick={() => handleAuthorChange(currentAuthor === 1 ? 0 : 1)} >
+            
+            <div className='indicator'>
+              <i className='fa-solid fa-rotate'></i>
+            </div>
             <div className={`author-container ${animate && 'animate'}`} data-status='first'>
               <div className='author-icon' style={{backgroundImage:`url(${authors.filter(i => {return i.id === currentAuthor})[0].image})`}}/>
               <div className='author-details-container'>
