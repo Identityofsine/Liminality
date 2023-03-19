@@ -15,14 +15,10 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
   const [animate, setAnimate] = useState(true)
 
   const handleAuthorChange = (id) => {
-    const sleepTime = 245;
+    const sleepTime = 475;
     const mom = async () => {
       if(story.content.length > 1){
         setAnimate(true);
-        await sleep(sleepTime)
-        setCurrentAuthor(id);
-        await sleep(sleepTime);
-        setAnimate(false);
       }
     }
     mom();
@@ -43,7 +39,7 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
               </div>
           </div>
           <div className={`author-wrapper ${story.content.length > 1 ? 'inter' : ''}`} data-type='swap' onClick={() => handleAuthorChange(currentAuthor === 1 ? 0 : 1)} >
-            <div className='author-container'>
+            <div className={`author-container ${animate && 'animate'}`} data-status='first'>
               <div className='author-icon' style={{backgroundImage:`url(${authors.filter(i => {return i.id === currentAuthor})[0].image})`}}/>
               <div className='author-details-container'>
                 <h2>{authors.filter(i => {return i.id === currentAuthor})[0].name}</h2>
@@ -51,11 +47,14 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
               </div>
             </div>
             {story.content.length > 1 && 
-              <div className={`author-container ${animate && 'animate'}`} data-status='second' data-author={currentAuthor === 1 ? 0 : 1} >
-                <div className='author-icon' style={{backgroundImage:`url(${authors[currentAuthor === 1 ? 0 : 1].image})`}}/>
+              <div className={`author-container ${animate && 'animate'}`} data-status='second' data-author={currentAuthor === 1 ? 0 : 1} onAnimationEnd={() => {
+                setCurrentAuthor(currentAuthor === 1 ? 0 : 1);
+                setAnimate(false);
+              }} >
+                <div className='author-icon' style={{backgroundImage:`url(${authors.filter(i => {return i.id !== currentAuthor})[0].image})`}}/>
                 <div className='author-details-container'>
-                  <h2>{authors[currentAuthor === 1 ? 0 : 1].name}</h2>
-                  {/* <span>{authors[story.authorID].bio}</span> */}
+                  <h2>{authors.filter(i => {return i.id !== currentAuthor})[0].name}</h2>
+                  <span>{authors.filter(i => {return i.id !== currentAuthor})[0].bio}</span>
                 </div>
               </div>
             }
