@@ -70,13 +70,14 @@ const Trailer = () => {
 function App() {
 
   const [loaded, setLoaded] = useState(false);
+  const [fullyloaded, setLoadedFull] = useState(false);
 
   return (
     <>
       <Header/>
       <Trailer/>
       <div className='wrapper'>
-        {!loaded && <Loading/>}
+        {!fullyloaded &&  <Loading doneLoadingState={loaded} setLoadingDone={setLoadedFull}/>}
         <TitleScreen setLoaded={setLoaded}/>
       </div>
     </>

@@ -1,5 +1,7 @@
 @import '../../breakpoints/breakpoints.scss';
 
+$animation-timer:350ms;
+
 @keyframes images-loading {
   0%{
     transform: scale(1);
@@ -22,6 +24,44 @@
 
 }
 
+@keyframes finished-loading-text {
+  0%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(0, 50%);
+
+  }
+}
+
+@keyframes finished-loading-images {
+  0%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0, -50%);
+
+  }
+
+}
+
+@keyframes finished-loading-content {
+  0%{
+    transform: translateY(-70%) scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-70%) scale(5);
+    opacity: 0;
+  }
+}
+
+
+
 .loading{
   position: absolute;
   top:0;
@@ -35,7 +75,11 @@
   justify-content: center;
   background-color: var(--bg-color);
   z-index: 20000;
+  transition: $animation-timer all;
   cursor: default;
+  &.animate{
+    opacity: 0;
+  }
 }
 
 
@@ -47,9 +91,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  &.animate{
+    animation: finished-loading-content $animation-timer ease-in;
+  }
 }
 
 .content > .text{
+  transition: 250ms all;
+  &.animate{
+    animation-delay: 1s;  
+    transform: translate(0, 50%);
+    animation: finished-loading-text $animation-timer ease-in;
+  }
 
 }
 
@@ -65,6 +119,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 250ms all;
+
+  &.animate{  
+    animation-delay: 1s;
+    opacity: 0;
+    
+    animation: finished-loading-images $animation-timer ease-in;
+  }
 }
 
 .images > .dot{

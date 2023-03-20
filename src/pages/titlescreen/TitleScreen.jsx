@@ -89,6 +89,7 @@ function TitleScreen({setLoaded = (e) => {}}) {
 
 
   useEffect(() => {
+
     if(currentImageLoaded >= stories.length)
       setLoaded(true);
       
@@ -139,6 +140,7 @@ function TitleScreen({setLoaded = (e) => {}}) {
               var image = new Image();
               image.onload = () => {
                 const wait = async () => {
+                  await sleep(50);
                   incrementImageLoaded();
                 }
                 wait();

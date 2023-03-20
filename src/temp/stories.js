@@ -260,7 +260,7 @@ exports.authors = [
   {
     id:0,
     name:'IAmDrakey',
-    bio:'Let Thy Aim',
+    bio:'Let thy mind be pure and thy aim be true.',
     image:'images/author/drake.png',
   },
   {
