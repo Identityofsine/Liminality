@@ -73,41 +73,43 @@ exports.stories = [
    imagebanner:'images/story-banner/end.png',
    date:0,
    abstract:'',
-   content:[{content:`The grass was green when the sun was beating down on my jet black hair. I could feel the wood chips from the playground prick the bottom of my heel everytime I walked. There were two playgrounds divided by a couple feet of dirt. One was an old, aged, wooden playground that heavily relied on tires for juvenile entertainment. Next to it was a bright purple plastic palace that stood taller but was bereft of features. Depending on your playstyle, you would strictly stick to one playground. The rougher kids would play at the splinter prone wooden playground and the more calm and less active kids would play -- hangout really -- at the plastic palace. 
+   content:[{content:`The grass was green when the sun was beating down on my jet black hair. I could feel the wood chips prick the bottom of my heel everytime I took a step. There were two playgrounds divided by a couple feet of dirt. One was an old, aged, wooden wasteland that heavily relied on tires for juvenile entertainment. Next to it was a bright purple plastic palace that stood taller but was bereft of features. Depending on your playstyle, you would congregate to one playground. The rougher kids would play at the splinter prone wasteland and the more calm and less active kids would play -- hangout really -- at the plastic palace. 
 
-   The purple playground was constructed with water bottle plastic, its floor was a thick black sheet metal covered with a hole punched pattern. During the summer, the sun would beat down on the black floor but the holes would allow air to flow and be habitable for sitting. Me and the other kids were galloping across the tires on the wooden playground, many of us would fall deep into the tire made net and end up scathing our knees and inner thighs; but since we were kids we would ignore the pain and continue in our affair of fun. After a few hops with my childhood friends, I exited the fun machine and began to make distance with them. None of them had noticed that I walked away so I felt this was a perfect time to excuse myself. In a mix of exhaustion and boredom, I made my way to the purple playground. 
+   The purple playground was constructed with water bottle plastic, its floor was a thick black sheet metal covered with a hole punched pattern. During the summer, the sun would beat down on the black floor but the holes would allow air to flow -- creating a habitable surface for sitting. Me and the other kids were galloping across the tires in wasteland, many of us would fall deep into the tire-made net and end up scathing our knees and inner thighs; but since we were kids we would ignore the pain and continue in our affair of fun. After a few hops with my closest buddies, I exited the fun machine and began to make distance with them. None of them had noticed that I walked away so I felt this was a perfect time to excuse myself. In a mix of exhaustion and boredom, I made my way to the purple palace. 
    
-   When I was younger, I was never in a state of search. I wouldn’t be looking for somebody to talk to or play with, I was endlessly curious and I wanted to see what was waiting for me. When I got up there, there were two kids sitting down. One was a girl and the other a boy. The boy and I happened to be a year younger than the girl. She had braces and dirty blond hair. Her clothes looked cheap and her fingernails were long and unpainted. Her young arms had a shadow of hair across them and she seemed masculine in nature. 
+   When I was younger, I was never in a state of search. You wouldn’t find me looking for somebody to talk to or play with, I was endlessly curious and I wanted to see what was waiting for me. When I got up there, there were two kids sitting down. One was a girl and the other a boy. The boy and I happened to be a year younger than the girl. She had braces and dirty blond hair. Her clothes looked cheap and her fingernails were long and unpainted. Her eyes weighed heavily with a beautiful blue.
    
-   They were talking to each other about the girl moving onto middle school in a couple of months. She wasn’t ready for the switch and she seemed stressed. In retrospect, there was a good chance that I was witnessing the first time this girl had ever felt real stress in her life. In hindsight, that wasn’t true; I wasn’t witnessing anything in that moment at all. I glided between both of their eyes and I mustered up a “Hey!” to them. The girl’s face scrunched as if I were violating her privacy, ruining her intimate moment. The boy looked up and nodded his head at me. I wouldn’t say I am friends with the kid, I don’t even know his name; but he's one of those people you frequently see. You never exchange names but at some point both of you start to associate each other as “that guy”.
+   They were talking to each other about the girl moving onto middle school in a couple of months. She wasn’t ready for the switch and she seemed stressed. In retrospect, there was a good chance that I was witnessing the first time this girl had ever felt real stress in her life. In hindsight, that wasn’t true; I wasn’t witnessing anything in that moment at all. Chances were she actually cared very little about middle school. I glided between both of their eyes and I mustered up a “Hey!”. The girl’s face scrunched as if I were violating her privacy, ruining her intimate moment. The boy looked up and nodded his head at me. I wouldn’t say I am friends with this kid, I don’t even know his name; but he's one of those people you frequently see. You never exchange names but at some point both of you start to associate each other as “that guy”.
    
    “What are you guys talking about?” I said, trying to meddle into their conversation. 
    
-   “Mind your bee’s wax.” she said hissingly. I took a step back and my eyes danced between the floor and their faces.
+   “Mind your bee’s wax!” she said hissingly. I took a step back and my eyes danced between the floor and their faces.
    
     “Relax. She’s going into middle school next year and she's upset.”, the boy confessed, “Don’t take it personal”. 
    
-   She says “I am not upset! I’m just…”, while looking down into the right.
+   She says “I am not upset about it! I’m just…”, while looking down into the right.
    
    The boy turns his head away from the girl and onto me, “Well, whatever it is, don’t worry about it.”, he scoots over and offers me a seat, patting his hand softly on the metal floor on his left. 
    
-   I felt like Adam after he ate the apple. Something about sitting down next to him felt wrong morally. I sat down softly without trying to upset the floor. My mouth opened with hesitation and I managed to ask the boy for his name.
+   I felt like Adam after he ate the apple. Something about sitting down next to him felt wrong morally. 
    
-   “It’s hunt, and this is Elma. It’s very nice to meet you.”
+   I sat down softly without trying to upset the floor. My mouth opened with hesitation and I managed to ask the boy for his name.
    
-   My tonality resembled a constant question as I replied, “Hunt? I never heard of that name; is there any special meaning to it?”
+   “It’s Hunt, and this is Elma. It’s very nice to meet you.”
+   
+   My tonality resembled a constant question throughout, “Hunt? I never heard of that name; is there any special meaning to it?”
    
    “No, my dad just really likes to hunt.”, He chuckled lightly and his smile faded away as quick as it came.
    
    We heard a whistle blow loud and I jerked my neck to see the dozens of kids racing a 100 yards to get back to the class. 
    
-   Hunt looks towards me, “You know they can’t see us from here.” 
+   I began to tense my body until Hunt looked towards me and says“You know they can’t see us from here.” 
    
-   Elma joins with “Yea, watch they won’t even know we're gone”.
+   My body still tense then, Elma joins with “Yea, watch they won’t even know we're gone. Relax, stay low.”.
    
-   The whistle blows for a second time and then finally all the kids are lined up and they start marching their way into the building. 
+   I soften my body as I hear the whistle blow for a second time. I peek my head over the small slits in the playground and I see that all the kids are lined up and marching their way into the building. 
    
-   My experience felt surreal as I saw them enter one by one. I felt like a fugitive in the act of his crime. It’s important to know that my class would be the last one to have recess; after a quick 45 minute debrief we would be sent home. 
+   My experience felt surreal. As I saw them enter one by one, I felt more like a fugitive in the act of his crime. It’s important to know that my class would be the last one to have recess; after a quick 45 minute debrief we would be sent home. 
    
    I had a few reasons other than peer pressure to not go back. For one, there would be no excuse for me to return to class after the others, they were all lined up and counted -- they would know I was gone before I had begun my journey back. A red alert would be called and a search party would find me here, relaxing on a playground.
    
