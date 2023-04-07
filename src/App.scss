@@ -34,9 +34,9 @@ body {
   }
   @include media('<=tablet'){
     // overflow-x:scroll;
-    padding-top: 0vmin;
-    margin-top: 30vmin;
-    height: calc(100vh - 60vmin);
+    padding-top: 30vmin;
+    // margin-top: 30vmin;
+    height: calc(100vh - 30vmin);
 
     // height:90vh;
   }
