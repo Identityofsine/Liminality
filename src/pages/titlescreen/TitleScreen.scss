@@ -220,7 +220,7 @@
   position: absolute;
   right: 3.25vmin;
   top: 2.5vmin;  
-  
+  z-index: 5;
   /* Styling for screens smaller than or equal to tablet size */
   @include media('<=tablet'){
     top:3.75vmin;  

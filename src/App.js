@@ -46,6 +46,10 @@ const Trailer = () => {
               case 'swap':
                 iconref.current.className = 'fa-solid fa-rotate'
                 break;
+              case 'fx':
+                //very different block
+                iconref.current.className = 'fa-solid fa-link'
+                break;
               default:
               break;
             }
@@ -76,8 +80,8 @@ function App() {
     <>
       <Header/>
       <Trailer/>
-      <div className='wrapper'>
         {!fullyloaded &&  <Loading doneLoadingState={loaded} setLoadingDone={setLoadedFull}/>}
+      <div className='wrapper'>
         <TitleScreen setLoaded={setLoaded}/>
       </div>
     </>

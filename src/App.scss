@@ -19,6 +19,10 @@ body {
 
 }
 
+*{
+  will-change: height, width, opacity, transform, color, bottom, top, left, right, margin, margin-top, margin-bottom, margin-left, line-height, z-index, cursor, font-size;
+}
+
 .wrapper{
   padding-top: 16vmin;
   padding-left:2%;
@@ -78,7 +82,7 @@ body {
 #trailer > i {
   margin:0 auto;
   font-size: 2vmin;
-  transition: 125ms all;
+  transition: 200ms all;
   color:black;
 }
 

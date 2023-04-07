@@ -76,7 +76,7 @@ $animation-timer:350ms;
   background-color: var(--bg-color);
   z-index: 20000;
   transition: $animation-timer all;
-  cursor: default;
+  cursor: none;
   &.animate{
     opacity: 0;
   }

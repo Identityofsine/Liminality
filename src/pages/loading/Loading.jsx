@@ -24,7 +24,7 @@ function Loading({doneLoadingState, setLoadingDone}) {
   }
 
   const zoomEndHandler = async () => {
-    await sleep(175);
+    await sleep(200);
     setFinish(true);
     setLoadingDone(true);
   }
