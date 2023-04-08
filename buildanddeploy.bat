@@ -13,11 +13,16 @@ if %does_exist% equ 0 (
 	echo Invalid Directory
 	goto :EDIT
 )
+IF "%CD%" equ "%newDIR%" (
+	echo Cannot use this directory as your target
+	GOTO :EDIT
+)
+
 set does_exist=0
 CALL :DOESEXIST %does_exist%
 if %does_exist% equ 1 rm .env.batch
 echo %newDIR%> .env.batch
-goto :INIR
+goto :INIT
 
 
 :DIREXIST
@@ -42,10 +47,13 @@ echo Moving New Build to %dir%...
 xcopy /E /H /C /I /Y .\build\* %dir%\ 
 cd %dir%
 echo Pushing to GitHub
+
+
 git add .
-git commit -m "Basic Commit"
+git commit -m "%data% - Auto Commit"
 git push
 
+echo Commited...
 
 goto :EOF
 
