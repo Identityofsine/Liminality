@@ -36,16 +36,16 @@ if %does_exist% equ 0 GOTO EDIT
 set /p dir=<.env.batch
 
 echo "INIT"
-start npm run build
+call npm run build
 echo Removing Old Contents from %dir%...
-start del /Q /F dir\* 
+del /Q /F dir\* 
 echo Moving New Build to %dir%...
-start mv .\build\* dir\
+mv .\build\* dir\
 cd dir
 echo Pushing to GitHub
-start git add .
-start git commit -m "Basic Commit"
-start git push
+git add .
+git commit -m "Basic Commit"
+git push
 
 
 goto :EOF
