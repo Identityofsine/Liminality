@@ -37,6 +37,7 @@ function run_init() {
     echo -e "\n";
     echo Commiting and Pushing...;
     local dte="$(date +'%m/%d/%y')"
+    cd $dir;
     git add .
     git commit -m "$dte - Basic Commit from bash script";
     git push
