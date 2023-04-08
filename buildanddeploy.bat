@@ -40,7 +40,7 @@ call npm run build
 echo Removing Old Contents from %dir%...
 del /Q /F dir\* 
 echo Moving New Build to %dir%...
-mv .\build\* dir\
+move .\build\* dir\
 cd dir
 echo Pushing to GitHub
 git add .
