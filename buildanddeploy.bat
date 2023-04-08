@@ -35,13 +35,12 @@ if %does_exist% equ 0 GOTO EDIT
 
 set /p dir=<.env.batch
 
-echo "INIT"
 call npm run build
 echo Removing Old Contents from %dir%...
 del /Q /F dir\* 
 echo Moving New Build to %dir%...
-xcopy /E /H /C /I .\build\* %dir%\ 
-cd dir
+xcopy /E /H /C /I /Y .\build\* %dir%\ 
+cd %dir%
 echo Pushing to GitHub
 git add .
 git commit -m "Basic Commit"
