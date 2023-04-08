@@ -34,7 +34,12 @@ function run_init() {
     rm -rf $dir/*;
     mv ./build/* $dir/;
     echo Moved Build to $dir;
-
+    echo -e "\n";
+    echo Commiting and Pushing...;
+    local dte="$(date +'%m/%d/%y')"
+    git add .
+    git commit -m "$dte - Basic Commit from bash script";
+    git push
 }
 
 function editDirectory () {
