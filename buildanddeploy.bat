@@ -45,6 +45,16 @@ if %does_exist% equ 0 GOTO EDIT
 
 set /p dir=<.env.batch
 
+IF "%CD%"=="%newDIR%" (
+	echo You cannot use this directory as your target
+	GOTO :EDIT
+) ELSE (
+	IF "%newDIR%"=="." (
+	echo You cannot use this directory as your target
+	GOTO :EDIT
+	)
+)
+
 call npm run build
 echo Removing Old Contents from %dir%...
 del /Q /F dir\* 
