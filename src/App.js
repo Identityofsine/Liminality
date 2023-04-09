@@ -64,7 +64,7 @@ const Trailer = () => {
   }, [])
   return(
     <div id='trailer' data-status='off'>
-      <i ref={iconref} class="fa-solid fa-book"></i>
+      <i ref={iconref} className="fa-solid fa-book"></i>
     </div>
   )
 

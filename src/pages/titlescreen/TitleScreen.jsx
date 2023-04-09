@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./TitleScreen.scss"
 import sleep from '../../util/sleep';
 import {authors, stories} from '../../temp/stories';
@@ -13,7 +13,8 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
 
   const [currentAuthor, setCurrentAuthor] = useState(author)
   const [animate, setAnimate] = useState(false)
-
+  const progressBar = useRef();
+  const storyContainer = useRef();
   const handleAuthorChange = (id) => {
     const sleepTime = 475;
     const mom = async () => {
@@ -23,6 +24,27 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
     }
     mom();
   }
+
+  useEffect(() => {
+    storyContainer.current.addEventListener("scroll", e => {
+      const storyspan = document.querySelector('.story-span');
+      const height = storyspan.clientHeight - storyContainer.current.clientHeight;
+//      console.log("SCROLL Y: %s, height : %s", storyContainer.current.scrollTop, height);
+      let keyframes;
+      console.log(window.screen.height)
+      if (window.screen.height > 1100) {
+        keyframes = {
+          height: `${(storyContainer.current.scrollTop / height) * 100}%`
+        } 
+      } else {
+        keyframes = {
+          width: `${(storyContainer.current.scrollTop / height) * 100}%`
+        }
+      }
+
+      progressBar.current.animate(keyframes, {duration:1000, fill:'forwards'})
+    })
+  }, []);
 
   return(
     <div className='opened-story' data-status={state}>
@@ -65,11 +87,15 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
           </div>
         </div>
       </div>
-      <div className='line'/>
+      <div className='lines-container'>
+        <div className='line'/>
+        <div className='line progress' ref={progressBar}/>
+
+      </div>
 
       <div className='right card'>
-        <div className='text-container'>
-          <span>
+        <div className='text-container' ref={storyContainer}>
+          <span className='story-span'>
           {story.content.filter((i) => { return i.authorID === currentAuthor})[0].content}
           </span>
         </div>
