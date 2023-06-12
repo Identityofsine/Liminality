@@ -32,14 +32,13 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
       const height = storyspan.clientHeight - storyContainer.current.clientHeight;
 //      console.log("SCROLL Y: %s, height : %s", storyContainer.current.scrollTop, height);
       let keyframes;
-      console.log(window.screen.height)
-      if (window.screen.height > 1100) {
+      if (window.screen.height > 850) {
         keyframes = {
           height: `${(storyContainer.current.scrollTop / height) * 100}%`
         } 
       } else {
         keyframes = {
-          width: `${(storyContainer.current.scrollTop / height) * 100}%`
+          height: `${(storyContainer.current.scrollTop / height) * 100}%`
         }
       }
 
