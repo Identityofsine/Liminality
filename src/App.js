@@ -10,14 +10,7 @@ const Trailer = () => {
   const iconref = useRef();
   useEffect(() => {
     
-    window.addEventListener("onstoryclick", (e) => {
-      if(e.detail.lock){
-        iconref.current.className = 'fa-solid fa-unlock'
-      } else
-        iconref.current.className = 'fa-solid fa-book'
-    });
-
-    onmousemove = e => {
+    const _logic_trailer = e => {
       const logic = (e, boolean, obj) => {
         const element = document.getElementById('trailer');
         const x = e.clientX - element.offsetHeight / 2,
@@ -61,6 +54,25 @@ const Trailer = () => {
         interacting = interactable !== null;
       logic(e, interacting, interactable);
     }
+
+    const _logic_trailer_hover = (e) => {
+      if(e.detail.lock){
+        iconref.current.className = 'fa-solid fa-unlock'
+      } else
+        iconref.current.className = 'fa-solid fa-book'
+    };
+
+
+    window.addEventListener("onstoryclick", _logic_trailer_hover);
+
+    onmousemove = _logic_trailer;
+
+    return () => {
+      window.removeEventListener("onstoryclick", _logic_trailer_hover);
+      onmousemove = () => {};
+    }
+
+
   }, [])
   return(
     <div id='trailer' data-status='off'>
