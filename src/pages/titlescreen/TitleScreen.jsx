@@ -26,7 +26,8 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
   }
 
   useEffect(() => {
-    storyContainer.current.addEventListener("scroll", e => {
+    const _ref_copy = storyContainer.current;
+    const _scroll_logic = e => {
       const storyspan = document.querySelector('.story-span');
       const height = storyspan.clientHeight - storyContainer.current.clientHeight;
 //      console.log("SCROLL Y: %s, height : %s", storyContainer.current.scrollTop, height);
@@ -43,7 +44,11 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
       }
 
       progressBar.current.animate(keyframes, {duration:1000, fill:'forwards'})
-    })
+    }
+
+    storyContainer.current.addEventListener("scroll", _scroll_logic);
+
+    return () => {_ref_copy.removeEventListener("scroll", _scroll_logic)}
   }, []);
 
   return(
@@ -119,7 +124,7 @@ function TitleScreen({setLoaded = (e) => {}}) {
     if(currentImageLoaded >= stories.length)
       setLoaded(true);
       
-  }, [currentImageLoaded])
+  }, [currentImageLoaded, setLoaded])
 
   const incrementImageLoaded = () => {
     sil(currentImageLoaded + 1);
