@@ -38,7 +38,7 @@ function OpenedStory({story = {name:'', authorID:0, image:'',imagebanner:'', con
         } 
       } else {
         keyframes = {
-          height: `${(storyContainer.current.scrollTop / height) * 100}%`
+          width: `${(storyContainer.current.scrollTop / height) * 100}%`
         }
       }
 
